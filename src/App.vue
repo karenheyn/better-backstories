@@ -2,8 +2,8 @@
   <div id="app">
     <div class="background">
       <div id="nav">
-        <div>
-          <img src="" alt="" />
+        <div class="header-container">
+          <img src="./assets/Logo.png" alt="logo" />
           <h1>Better Backstories</h1>
         </div>
         <div class="nav-links-container">
@@ -43,7 +43,12 @@
 #nav {
   /* padding: 30px; */
   display: flex;
+  align-items: center;
   justify-content: space-between;
+}
+
+#nav .header-container {
+  display: flex;
 }
 
 #nav .nav-links-container {
