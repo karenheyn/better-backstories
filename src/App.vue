@@ -38,6 +38,7 @@
   background-position-y: -5px;
   background-attachment: fixed;
   height: 100%;
+  width: 100vw;
 }
 
 #nav {
@@ -45,6 +46,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 #nav .header-container {
@@ -54,6 +56,8 @@
 
 #nav .nav-links-container {
   bottom: 0;
+  /* display: flex;
+  justify-content: space-between; */
 }
 #nav h1 {
   color: #d2bf9e;
@@ -72,5 +76,20 @@
 #nav a.router-link-exact-active {
   /* color: #42b983; */
   text-decoration: underline;
+}
+
+@media only screen and (max-width: 900px) {
+  #nav h1 {
+    font-size: 30px;
+  }
+  #nav a {
+    font-size: 17px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  #nav {
+    justify-content: center;
+    flex-direction: column;
+  }
 }
 </style>
