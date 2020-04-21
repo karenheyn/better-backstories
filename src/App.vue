@@ -39,6 +39,7 @@
             /></a>
           </li>
         </ul>
+        <h4>Better Backstories© 2020</h4>
       </footer>
     </div>
   </div>
@@ -112,7 +113,7 @@ footer {
   bottom: 0;
   background: #012531d6;
   width: 100%;
-  height: 50px;
+  height: 69px;
 }
 
 footer ul {
@@ -120,18 +121,27 @@ footer ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 3px;
+  width: 400px;
+  margin: 0 auto;
 }
 ul li {
   margin: 0 35px;
   list-style: none;
 }
 a img {
-  height: 30px;
+  height: 25px;
 }
 
 .youtube-link {
-  height: 50px;
+  height: 42px;
+}
+footer h4 {
+  position: absolute;
+  right: 10px;
+  bottom: 20px;
+  color: #ffffff;
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
 }
 
 @media only screen and (max-width: 970px) {

@@ -40,6 +40,7 @@ h2 {
   font-weight: 500;
   transform: scaleY(1.1);
   text-shadow: 1px 1px 1px black;
+  font-family: "Oswald", sans-serif;
 }
 
 h2 span {
@@ -48,13 +49,14 @@ h2 span {
 
 p {
   color: #ffffff;
-  font-size: 26px;
+  font-size: 28px;
   text-align: left;
   margin: 40px 65px;
-  width: 733px;
+  width: 617px;
   font-weight: 500;
   transform: scaleY(1.1);
   text-shadow: 1px 1px 1px #000000;
+  font-family: "Oswald", sans-serif;
 }
 h3 {
   margin: 40px 0 0;
@@ -78,6 +80,6 @@ img {
 
   bottom: 70px;
   right: 10px;
-  width: 450px;
+  width: 550px;
 }
 </style>
