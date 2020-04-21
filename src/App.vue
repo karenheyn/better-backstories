@@ -49,6 +49,7 @@
 
 #nav .header-container {
   display: flex;
+  align-items: center;
 }
 
 #nav .nav-links-container {
@@ -57,11 +58,15 @@
 #nav h1 {
   color: #d2bf9e;
   font-family: "Cinzel", serif;
+  font-size: 36px;
 }
 #nav a {
   font-weight: bold;
   color: #ffffff;
   text-decoration: none;
+  margin: 10px;
+  font-family: "Cinzel", serif;
+  font-size: 24px;
 }
 
 #nav a.router-link-exact-active {
