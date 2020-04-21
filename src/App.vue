@@ -16,23 +16,26 @@
       <footer>
         <ul>
           <li>
-            <a href="youtube.com"
+            <a href="https://www.youtube.com" target="blank"
               ><img src="./assets/icons/instagram.png" alt="instagram" />
             </a>
           </li>
           <li>
-            <a href="facebook">
+            <a href="facebook" target="blank">
               <img src="./assets/icons/facebook.png" alt="facebook" />
             </a>
           </li>
           <li>
-            <a href="kickstarter">
+            <a href="kickstarter" target="blank">
               <img src="./assets/icons/kickstarter.png" alt="kickstarter"
             /></a>
           </li>
           <li>
-            <a href="youtube"
-              ><img src="./assets/icons/youtube.png" alt="youtube"
+            <a href="youtube" target="blank"
+              ><img
+                class="youtube-link"
+                src="./assets/icons/youtube.png"
+                alt="youtube"
             /></a>
           </li>
         </ul>
@@ -117,13 +120,18 @@ footer ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 3px;
 }
 ul li {
   margin: 0 35px;
   list-style: none;
 }
 a img {
-  height: 35px;
+  height: 30px;
+}
+
+.youtube-link {
+  height: 50px;
 }
 
 @media only screen and (max-width: 970px) {
