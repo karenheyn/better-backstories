@@ -75,7 +75,8 @@
 
 #nav a.router-link-exact-active {
   /* color: #42b983; */
-  text-decoration: underline;
+  /* text-decoration: underline #d2bf9e; */
+  border-bottom: 2px solid #d2bf9e;
 }
 
 @media only screen and (max-width: 900px) {
