@@ -17,21 +17,23 @@
         <ul>
           <li>
             <a href="youtube.com"
-              ><img src="./assets/icons/instagram.png" alt="" />
+              ><img src="./assets/icons/instagram.png" alt="instagram" />
             </a>
           </li>
           <li>
             <a href="facebook">
-              <img src="./assets/icons/facebook.png" alt="" />
+              <img src="./assets/icons/facebook.png" alt="facebook" />
             </a>
           </li>
           <li>
             <a href="kickstarter">
-              <img src="./assets/icons/kickstarter.png" alt=""
+              <img src="./assets/icons/kickstarter.png" alt="kickstarter"
             /></a>
           </li>
           <li>
-            <a href="youtube"><img src="./assets/icons/youtube.png" alt=""/></a>
+            <a href="youtube"
+              ><img src="./assets/icons/youtube.png" alt="youtube"
+            /></a>
           </li>
         </ul>
       </footer>
