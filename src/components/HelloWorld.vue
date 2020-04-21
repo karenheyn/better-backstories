@@ -1,58 +1,83 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
+    <h1>BETTER BACKSTORIES</h1>
+    <h2>Put a little more <span>character</span> in your character</h2>
     <p>
-      For a guide and recipes on how to configure / customize this project,<br>
-      check out the
-      <a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli documentation</a>.
+      Better Backstories is a card-based random life history generator for
+      creative writing, educators, RPG Gamemasters, and even song writers. Works
+      with any role playing system.
     </p>
-    <h3>Installed CLI Plugins</h3>
-    <ul>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel" target="_blank" rel="noopener">babel</a></li>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-eslint" target="_blank" rel="noopener">eslint</a></li>
-    </ul>
-    <h3>Essential Links</h3>
-    <ul>
-      <li><a href="https://vuejs.org" target="_blank" rel="noopener">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank" rel="noopener">Forum</a></li>
-      <li><a href="https://chat.vuejs.org" target="_blank" rel="noopener">Community Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank" rel="noopener">Twitter</a></li>
-      <li><a href="https://news.vuejs.org" target="_blank" rel="noopener">News</a></li>
-    </ul>
-    <h3>Ecosystem</h3>
-    <ul>
-      <li><a href="https://router.vuejs.org" target="_blank" rel="noopener">vue-router</a></li>
-      <li><a href="https://vuex.vuejs.org" target="_blank" rel="noopener">vuex</a></li>
-      <li><a href="https://github.com/vuejs/vue-devtools#vue-devtools" target="_blank" rel="noopener">vue-devtools</a></li>
-      <li><a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a></li>
-    </ul>
+    <button>Learn More</button>
+    <img src="../assets/Characters.png" alt="characters" />
   </div>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: "HelloWorld",
   props: {
-    msg: String
-  }
-}
+    msg: String,
+  },
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+h1 {
+  font-family: "IM Fell English", serif;
+  color: #d2bf9e;
+  font-size: 90px;
+  font-weight: 300;
+  text-align: left;
+  margin: 10px 65px;
+  text-shadow: 1px 1px 1px black;
+}
+h2 {
+  color: #ffffff;
+  text-align: left;
+  margin: 10px 65px;
+  font-size: 45px;
+  font-weight: 500;
+  transform: scaleY(1.1);
+  text-shadow: 1px 1px 1px black;
+}
+
+h2 span {
+  color: #d2bf9e;
+}
+
+p {
+  color: #ffffff;
+  font-size: 26px;
+  text-align: left;
+  margin: 40px 65px;
+  width: 733px;
+  font-weight: 500;
+  transform: scaleY(1.1);
+  text-shadow: 1px 1px 1px #000000;
+}
 h3 {
   margin: 40px 0 0;
 }
-ul {
-  list-style-type: none;
-  padding: 0;
+button {
+  position: absolute;
+  left: 70px;
+  padding: 10px 30px;
+  font-size: 30px;
+  font-family: "IM Fell English", serif;
+  border-radius: 50px;
+  background: #d2bf9e;
+  color: #003b8e;
+  border: 1px solid linear-gradient(#ffffff, #000000);
+  -moz-box-shadow: 0 0 3px #000000;
+  -webkit-box-shadow: 0 0 3px #000000;
+  box-shadow: 0 0 3px #000000;
 }
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
+img {
+  position: absolute;
+
+  bottom: 70px;
+  right: 10px;
+  width: 450px;
 }
 </style>

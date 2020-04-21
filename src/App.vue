@@ -13,6 +13,28 @@
         </div>
       </div>
       <router-view />
+      <footer>
+        <ul>
+          <li>
+            <a href="youtube.com"
+              ><img src="./assets/icons/instagram.png" alt="" />
+            </a>
+          </li>
+          <li>
+            <a href="facebook">
+              <img src="./assets/icons/facebook.png" alt="" />
+            </a>
+          </li>
+          <li>
+            <a href="kickstarter">
+              <img src="./assets/icons/kickstarter.png" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="youtube"><img src="./assets/icons/youtube.png" alt=""/></a>
+          </li>
+        </ul>
+      </footer>
     </div>
   </div>
 </template>
@@ -47,6 +69,7 @@
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding: 0 20px;
 }
 
 #nav .header-container {
@@ -79,7 +102,29 @@
   border-bottom: 2px solid #d2bf9e;
 }
 
-@media only screen and (max-width: 900px) {
+footer {
+  position: absolute;
+  bottom: 0;
+  background: #012531d6;
+  width: 100%;
+  height: 50px;
+}
+
+footer ul {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ul li {
+  margin: 0 35px;
+  list-style: none;
+}
+a img {
+  height: 35px;
+}
+
+@media only screen and (max-width: 970px) {
   #nav h1 {
     font-size: 30px;
   }
@@ -87,7 +132,7 @@
     font-size: 17px;
   }
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 760px) {
   #nav {
     justify-content: center;
     flex-direction: column;
