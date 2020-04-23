@@ -26,7 +26,7 @@ export default {
 h1 {
   font-family: "IM Fell English", serif;
   color: #d2bf9e;
-  font-size: 90px;
+  font-size: 6.5vw;
   font-weight: 300;
   text-align: left;
   margin: 10px 65px;
@@ -74,12 +74,30 @@ button {
   -moz-box-shadow: 0 0 3px #000000;
   -webkit-box-shadow: 0 0 3px #000000;
   box-shadow: 0 0 3px #000000;
+  margin: 20px 0 0 0;
 }
 img {
   position: absolute;
-
   bottom: 70px;
   right: 10px;
   width: 550px;
 }
+
+/* @media only screen and (max-width: 1200px) {
+  h1 {
+    font-size: 70px;
+  }
+  img {
+    width: 400px;
+  }
+  h2,
+  p {
+    width: 100%;
+  }
+  h1,
+  h2,
+  p {
+    margin: 0 auto;
+  }
+} */
 </style>

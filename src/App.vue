@@ -13,35 +13,35 @@
         </div>
       </div>
       <router-view />
-      <footer>
-        <ul>
-          <li>
-            <a href="https://www.youtube.com" target="blank"
-              ><img src="./assets/icons/instagram.png" alt="instagram" />
-            </a>
-          </li>
-          <li>
-            <a href="facebook" target="blank">
-              <img src="./assets/icons/facebook.png" alt="facebook" />
-            </a>
-          </li>
-          <li>
-            <a href="kickstarter" target="blank">
-              <img src="./assets/icons/kickstarter.png" alt="kickstarter"
-            /></a>
-          </li>
-          <li>
-            <a href="youtube" target="blank"
-              ><img
-                class="youtube-link"
-                src="./assets/icons/youtube.png"
-                alt="youtube"
-            /></a>
-          </li>
-        </ul>
-        <h4>Better Backstories© 2020</h4>
-      </footer>
     </div>
+    <footer>
+      <ul>
+        <li>
+          <a href="https://www.youtube.com" target="blank"
+            ><img src="./assets/icons/instagram.png" alt="instagram" />
+          </a>
+        </li>
+        <li>
+          <a href="facebook" target="blank">
+            <img src="./assets/icons/facebook.png" alt="facebook" />
+          </a>
+        </li>
+        <li>
+          <a href="kickstarter" target="blank">
+            <img src="./assets/icons/kickstarter.png" alt="kickstarter"
+          /></a>
+        </li>
+        <li>
+          <a href="youtube" target="blank"
+            ><img
+              class="youtube-link"
+              src="./assets/icons/youtube.png"
+              alt="youtube"
+          /></a>
+        </li>
+      </ul>
+      <h4>Better Backstories© 2020</h4>
+    </footer>
   </div>
 </template>
 
@@ -64,9 +64,9 @@
 #app .background {
   background-image: url("./assets/Backgroundlong.png");
   background-position-y: -5px;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   height: 100%;
-  width: 100vw;
+  width: 100%;
 }
 
 #nav {
@@ -114,6 +114,7 @@ footer {
   background: #012531d6;
   width: 100%;
   height: 69px;
+  display: flex;
 }
 
 footer ul {
