@@ -122,7 +122,7 @@ footer ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 400px;
+  width: 100%;
   margin: 0 auto;
 }
 ul li {

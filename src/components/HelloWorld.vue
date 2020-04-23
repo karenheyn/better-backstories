@@ -36,7 +36,7 @@ h2 {
   color: #ffffff;
   text-align: left;
   margin: 10px 65px;
-  font-size: 45px;
+  font-size: 3.9vw;
   font-weight: 500;
   transform: scaleY(1.1);
   text-shadow: 1px 1px 1px black;
@@ -49,10 +49,10 @@ h2 span {
 
 p {
   color: #ffffff;
-  font-size: 28px;
+  font-size: 2.2vw;
   text-align: left;
   margin: 40px 65px;
-  width: 617px;
+  max-width: 617px;
   font-weight: 500;
   transform: scaleY(1.1);
   text-shadow: 1px 1px 1px #000000;
@@ -80,7 +80,7 @@ img {
   position: absolute;
   bottom: 70px;
   right: 10px;
-  width: 550px;
+  width: 36vw;
 }
 
 /* @media only screen and (max-width: 1200px) {
