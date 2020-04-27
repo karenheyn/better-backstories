@@ -10,8 +10,8 @@
       creative writing, educators, RPG Gamemasters, and even song writers. Works
       with any role playing system.
     </p>
-    <button>Learn More</button>
     <img src="../assets/Characters.png" alt="characters" />
+    <button>Learn More</button>
   </div>
 </template>
 
@@ -85,6 +85,7 @@ img {
   width: 36vw;
 }
 @media only screen and (max-width: 600px) {
+  /*mobile*/
   img {
     position: relative;
     margin: 20px 0 0 30px;
@@ -108,21 +109,31 @@ img {
     margin: 70px auto;
   }
 }
-/* @media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1100px) and (min-width: 650px) {
+  /*tablet*/
   h1 {
-    font-size: 70px;
+    font-size: 8vw;
   }
   img {
-    width: 400px;
+    margin: 20px 0 60px 30px;
+    width: 57vw;
   }
-  h2,
+  h2 {
+    font-size: 5.5vw;
+  }
   p {
-    width: 100%;
+    font-size: 4vw;
+    max-width: 80%;
   }
   h1,
   h2,
   p {
-    margin: 0 auto;
+    margin: 20px 0 80px 20px;
   }
-} */
+  button {
+    font-size: 50px;
+    margin-top: 18%;
+    margin-left: 20px;
+  }
+}
 </style>
