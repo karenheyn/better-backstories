@@ -5,12 +5,13 @@
       Put a little more
       <span>character</span> in your character
     </h2>
+    <img src="../assets/Characters.png" alt="characters" />
     <p>
       Better Backstories is a card-based random life history generator for
       creative writing, educators, RPG Gamemasters, and even song writers. Works
       with any role playing system.
     </p>
-    <img src="../assets/Characters.png" alt="characters" />
+
     <button>Learn More</button>
   </div>
 </template>
@@ -88,7 +89,7 @@ img {
   /*mobile*/
   img {
     position: relative;
-    margin: 20px 0 0 30px;
+    margin: 50px 0 -60px 30px;
     width: 90vw;
   }
   h1 {
@@ -98,15 +99,15 @@ img {
   }
   h2 {
     font-size: 8vw;
-    margin: 0 10px;
+    margin: 30px 10px;
     text-align: center;
   }
   p {
     font-size: 6vw;
-    margin: 60px 30px;
+    margin: 20px 30px;
   }
   button {
-    margin: 0 auto;
+    margin: 60px auto;
   }
 }
 @media only screen and (max-width: 1100px) and (min-width: 650px) {
