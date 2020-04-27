@@ -106,7 +106,7 @@ img {
     margin: 60px 30px;
   }
   button {
-    margin: 70px auto;
+    margin: 0 auto;
   }
 }
 @media only screen and (max-width: 1100px) and (min-width: 650px) {
