@@ -55,14 +55,14 @@
   text-align: center;
   color: #2c3e50;
   background-color: #5e91f2;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 #app .background {
   background-image: url("./assets/Backgroundlong.png");
   background-position-y: -5px;
   /* background-attachment: fixed; */
-  height: 100%;
+  min-height: 100%;
   width: 100%;
 }
 
@@ -106,7 +106,7 @@
 }
 
 footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   background: #012531d6;
   width: 100%;

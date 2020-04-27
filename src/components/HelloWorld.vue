@@ -85,9 +85,20 @@ img {
   right: 10px;
   width: 36vw;
 }
-@media only screen and (max-width: 800px) {
-  #nav {
-    padding: 0;
+@media only screen and (max-width: 600px) {
+  img {
+    position: relative;
+    margin: 0 auto;
+    bottom: 0;
+    right: 0;
+    width: 350px;
+  }
+  h1 {
+    font-size: 9.5vw;
+    text-align: center;
+  }
+  h2 {
+    font-size: 6vw;
   }
 }
 /* @media only screen and (max-width: 1200px) {
