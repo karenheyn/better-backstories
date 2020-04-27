@@ -13,32 +13,32 @@
         </div>
       </div>
       <router-view />
+      <footer>
+        <ul>
+          <li>
+            <a href="https://www.youtube.com" target="blank">
+              <img src="./assets/icons/instagram.png" alt="instagram" />
+            </a>
+          </li>
+          <li>
+            <a href="facebook" target="blank">
+              <img src="./assets/icons/facebook.png" alt="facebook" />
+            </a>
+          </li>
+          <li>
+            <a href="kickstarter" target="blank">
+              <img src="./assets/icons/kickstarter.png" alt="kickstarter" />
+            </a>
+          </li>
+          <li>
+            <a href="youtube" target="blank">
+              <img class="youtube-link" src="./assets/icons/youtube.png" alt="youtube" />
+            </a>
+          </li>
+        </ul>
+        <h4>Better Backstories© 2020</h4>
+      </footer>
     </div>
-    <footer>
-      <ul>
-        <li>
-          <a href="https://www.youtube.com" target="blank">
-            <img src="./assets/icons/instagram.png" alt="instagram" />
-          </a>
-        </li>
-        <li>
-          <a href="facebook" target="blank">
-            <img src="./assets/icons/facebook.png" alt="facebook" />
-          </a>
-        </li>
-        <li>
-          <a href="kickstarter" target="blank">
-            <img src="./assets/icons/kickstarter.png" alt="kickstarter" />
-          </a>
-        </li>
-        <li>
-          <a href="youtube" target="blank">
-            <img class="youtube-link" src="./assets/icons/youtube.png" alt="youtube" />
-          </a>
-        </li>
-      </ul>
-      <h4>Better Backstories© 2020</h4>
-    </footer>
   </div>
 </template>
 
@@ -64,6 +64,7 @@
   /* background-attachment: fixed; */
   min-height: 100vh;
   width: 100%;
+  position: relative;
 }
 
 #nav {
@@ -106,7 +107,7 @@
 }
 
 footer {
-  position: fixed;
+  position: absolute;
   bottom: 0;
   background: #012531d6;
   width: 100%;
@@ -123,7 +124,7 @@ footer ul {
   margin: 0 auto;
 }
 ul li {
-  margin: 0 35px;
+  margin: 0 30px;
   list-style: none;
 }
 a img {
