@@ -66,7 +66,6 @@ h3 {
 }
 button {
   display: flex;
-
   padding: 10px 30px;
   font-size: 30px;
   font-family: "IM Fell English", serif;
@@ -77,7 +76,7 @@ button {
   -moz-box-shadow: 0 0 3px #000000;
   -webkit-box-shadow: 0 0 3px #000000;
   box-shadow: 0 0 3px #000000;
-  margin: 20px 0 0 65px;
+  margin: 20px 0 60px 65px;
 }
 img {
   position: absolute;
@@ -88,10 +87,8 @@ img {
 @media only screen and (max-width: 600px) {
   img {
     position: relative;
-    margin: 0 auto;
-    bottom: 0;
-    right: 0;
-    width: 350px;
+    margin: 20px 0 0 30px;
+    width: 90vw;
   }
   h1 {
     font-size: 12.5vw;
@@ -105,11 +102,10 @@ img {
   }
   p {
     font-size: 6vw;
-    margin: 60px 60px;
+    margin: 60px 30px;
   }
-  img {
-    position: relative;
-    margin: 40px 50px;
+  button {
+    margin: 70px auto;
   }
 }
 /* @media only screen and (max-width: 1200px) {
