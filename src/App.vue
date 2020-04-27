@@ -7,8 +7,8 @@
           <h1>Better Backstories</h1>
         </div>
         <div class="nav-links-container">
-          <router-link to="/">Home</router-link> |
-          <router-link to="/product">Our Product</router-link> |
+          <router-link to="/">Home</router-link>|
+          <router-link to="/product">Our Product</router-link>|
           <router-link to="/about">About</router-link>
         </div>
       </div>
@@ -17,8 +17,8 @@
     <footer>
       <ul>
         <li>
-          <a href="https://www.youtube.com" target="blank"
-            ><img src="./assets/icons/instagram.png" alt="instagram" />
+          <a href="https://www.youtube.com" target="blank">
+            <img src="./assets/icons/instagram.png" alt="instagram" />
           </a>
         </li>
         <li>
@@ -28,16 +28,13 @@
         </li>
         <li>
           <a href="kickstarter" target="blank">
-            <img src="./assets/icons/kickstarter.png" alt="kickstarter"
-          /></a>
+            <img src="./assets/icons/kickstarter.png" alt="kickstarter" />
+          </a>
         </li>
         <li>
-          <a href="youtube" target="blank"
-            ><img
-              class="youtube-link"
-              src="./assets/icons/youtube.png"
-              alt="youtube"
-          /></a>
+          <a href="youtube" target="blank">
+            <img class="youtube-link" src="./assets/icons/youtube.png" alt="youtube" />
+          </a>
         </li>
       </ul>
       <h4>Better Backstories© 2020</h4>
@@ -153,10 +150,23 @@ footer h4 {
     font-size: 17px;
   }
 }
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 860px) {
   #nav {
     justify-content: center;
     flex-direction: column;
+    padding: 0;
+  }
+  footer {
+    flex-direction: column;
+    height: 70px;
+  }
+  footer h4 {
+    position: relative;
+    font-size: 15px;
+    margin-top: 13px;
+  }
+  footer ul {
+    /* justify-content: space-around; */
   }
 }
 </style>

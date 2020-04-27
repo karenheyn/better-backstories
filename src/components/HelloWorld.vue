@@ -1,7 +1,10 @@
 <template>
   <div class="hello">
     <h1>BETTER BACKSTORIES</h1>
-    <h2>Put a little more <span>character</span> in your character</h2>
+    <h2>
+      Put a little more
+      <span>character</span> in your character
+    </h2>
     <p>
       Better Backstories is a card-based random life history generator for
       creative writing, educators, RPG Gamemasters, and even song writers. Works
@@ -16,8 +19,8 @@
 export default {
   name: "HelloWorld",
   props: {
-    msg: String,
-  },
+    msg: String
+  }
 };
 </script>
 
@@ -82,7 +85,11 @@ img {
   right: 10px;
   width: 36vw;
 }
-
+@media only screen and (max-width: 800px) {
+  #nav {
+    padding: 0;
+  }
+}
 /* @media only screen and (max-width: 1200px) {
   h1 {
     font-size: 70px;
