@@ -65,7 +65,7 @@
   min-height: 100vh;
   width: 100%;
   position: relative;
-  padding-bottom: 80px;
+  padding-bottom: 120px;
 }
 
 #nav {
