@@ -7,6 +7,7 @@
         <p>Better Backstories was designed by James ‘Jay’ Stilipec, Tim Mazurek, and Blazbaros. It was born out of a love of developing detailed life histories for role playing characters. It was brought to life through a Kickstarter campaign and the help of 1343 backers. While only asking for $3000, Jay was thrilled to garner more than $27,000 in pledges.</p>
       </div>
     </div>
+    <h1>Jay Stilipec’s Backstory</h1>
   </div>
 </template>
 
