@@ -1,6 +1,8 @@
 <template>
   <div class="hello">
     <h1>How It Works</h1>
+    <img class="cards" src="../assets/Cards.png" alt="warrior" />
+
     <img class="warrior" src="../assets/Tomas_Caraballo1.png" alt="warrior" />
     <div class="outer-wrapper">
       <div class="inner-wrapper">
@@ -43,6 +45,7 @@ h1 {
   width: 70vw;
   margin: 0 auto;
   padding: 60px;
+  margin-top: 60px;
 }
 .inner-wrapper {
   background: #e3dcdc;
@@ -62,5 +65,10 @@ p {
   clip-path: polygon(50% 0%, 68% 55%, 100% 66%, 50% 100%, 0 100%, 0 0);
   shape-outside: polygon(50% 0%, 61% 55%, 100% 79%, 50% 100%, 0 100%, 0 0);
   margin: 300px 0 0 0;
+}
+.cards {
+  float: right;
+  height: 300px;
+  margin: -100px 80px 0 0;
 }
 </style>
