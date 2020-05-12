@@ -77,7 +77,7 @@ button {
   -moz-box-shadow: 0 0 3px #000000;
   -webkit-box-shadow: 0 0 3px #000000;
   box-shadow: 0 0 3px #000000;
-  margin: 20px 0 60px 65px;
+  margin: 50px 0 0px 60px;
 }
 img {
   position: absolute;

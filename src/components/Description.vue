@@ -17,6 +17,20 @@
         <p>Use the details on the cards to develop your backstory. You can keep to the text as written, or use them as a guideline to jump start your imagination, and develop a unique story for your character.</p>
       </div>
     </div>
+    <img class="lucidra" src="../assets/Lucidra.png" alt="warrior" />
+    <div class="iframe-outline">
+      <div class="iframe-container">
+        <iframe
+          class="how-to-video"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/2xTofSYp1Fc"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -52,6 +66,7 @@ h1 {
   padding: 30px 25px;
   box-shadow: 0px 1px 3px #888888;
 }
+
 p {
   text-align: left;
   margin: 60px 40px;
@@ -70,5 +85,49 @@ p {
   float: right;
   height: 300px;
   margin: -100px 80px 0 0;
+}
+.lucidra {
+  position: relative;
+  float: right;
+  height: 400px;
+  bottom: 309px;
+  clip-path: polygon(40% 0, 98% 0, 100% 100%, 0 100%, 0 51%, 43% 35%);
+  shape-outside: polygon(40% 0, 98% 0, 100% 100%, 0 100%, 0 51%, 43% 35%);
+  -webkit-shape-outside: polygon(
+    40% 0,
+    98% 0,
+    100% 100%,
+    0 100%,
+    0 51%,
+    43% 35%
+  );
+  -webkit-clip-path: polygon(40% 0, 98% 0, 100% 100%, 0 100%, 0 51%, 43% 35%);
+}
+
+.iframe-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+.iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.iframe-outline {
+  margin: 160px auto;
+  width: 70%;
+  padding: 15px;
+  background: #1d5574;
+}
+.hello::after {
+  content: " "; /* Older browser do not support empty content */
+  visibility: hidden;
+  display: block;
+  height: 0;
+  /* clear: both; */
 }
 </style>
