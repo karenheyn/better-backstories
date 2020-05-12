@@ -35,7 +35,7 @@
           </li>
           <li>
             <a
-              href="youtube.com/watch?v=x4Zg--yx3A0&list=PLbldekf_km5Lj62hCFhrX5CDKnYif-57m"
+              href="https://youtube.com/watch?v=x4Zg--yx3A0&list=PLbldekf_km5Lj62hCFhrX5CDKnYif-57m"
               target="blank"
             >
               <img class="youtube-link" src="./assets/icons/youtube.png" alt="youtube" />
