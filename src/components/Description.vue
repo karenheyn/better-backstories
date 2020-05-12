@@ -78,13 +78,13 @@ p {
   height: 600px;
   float: left;
   clip-path: polygon(50% 0%, 68% 55%, 100% 66%, 50% 100%, 0 100%, 0 0);
-  shape-outside: polygon(50% 0%, 61% 55%, 100% 79%, 50% 100%, 0 100%, 0 0);
+  shape-outside: polygon(50% 0%, 61% 55%, 100% 82%, 50% 100%, 0 100%, 0 0);
   margin: 300px 0 0 0;
 }
 .cards {
   float: right;
   height: 300px;
-  margin: -100px 80px 0 0;
+  margin: -70px 35px 0 0;
 }
 .lucidra {
   position: relative;
@@ -118,7 +118,7 @@ p {
   height: 100%;
 }
 .iframe-outline {
-  margin: 160px auto;
+  margin: 120px auto;
   width: 70%;
   padding: 15px;
   background: #1d5574;
@@ -129,5 +129,39 @@ p {
   display: block;
   height: 0;
   /* clear: both; */
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    margin: 30px;
+    font-size: 43px;
+  }
+  .cards {
+    height: 200px;
+    margin: -40px 0 0 0;
+  }
+  .warrior {
+    height: 300px;
+    margin: 168px 0 0 0;
+  }
+  .lucidra {
+    height: 200px;
+    bottom: 127px;
+  }
+  .outer-wrapper {
+    width: 80vw;
+    padding: 35px;
+  }
+  .inner-wrapper {
+    padding: 15px;
+  }
+  p {
+    margin: 60px 26px;
+    font-size: 1rem;
+  }
+  .iframe-outline {
+    width: 85vw;
+    padding: 9px;
+  }
 }
 </style>
