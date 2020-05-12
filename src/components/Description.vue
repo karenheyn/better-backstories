@@ -57,8 +57,10 @@ p {
   font-size: 2.4vw;
 }
 .warrior {
-  position: absolute;
+  position: relative;
   height: 600px;
-  left: 50px;
+  float: left;
+  clip-path: polygon(50% 0%, 68% 55%, 100% 66%, 50% 100%, 0 100%, 0 0);
+  shape-outside: polygon(50% 0%, 68% 55%, 100% 66%, 50% 100%, 0 100%, 0 0);
 }
 </style>
