@@ -222,6 +222,7 @@ p {
 @media only screen and (max-width: 600px) {
   p {
     font-size: 5vw;
+    font-size: 1rem;
   }
   .bio-inner-container-left {
     padding: 10px 65px 10px 10px;
@@ -257,5 +258,12 @@ p {
     display: inline;
     text-align: left;
   }
+  /* @media only screen and (max-width: 900px) {
+    .bio-inner-container-right {
+      background: #e3dcdc;
+      text-align: right;
+      padding: 25px 25px 25px 75px;
+    }
+  } */
 }
 </style>
