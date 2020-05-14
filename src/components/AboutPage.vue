@@ -9,15 +9,18 @@
     </div>
     <div class="bio-wrapper">
       <h1>Jay Stilipec’s Backstory</h1>
-      <div class="bio-container-right">
-        <div class="bio-inner-container-right">
-          <p>I love making role-playing characters. In order to make sure each character has a unique backstory of wonder and woe, I created Better Backstories. This easy to use and easy to customize system is genre neutral, and these cards can help everyone to make better backstories. It doesn't matter if you're a novice making their first fighter, or an expert game master developing their corrupted galactic president. Better Backstories are suitable for Player Characters, Non-Player Characters, and Game Masters alike. They are designed to jump start your imagination and make your characters come to life.</p>
+      <div class="grid-container">
+        <div class="bio-container-right">
+          <div class="bio-inner-container-right">
+            <p>I love making role-playing characters. In order to make sure each character has a unique backstory of wonder and woe, I created Better Backstories. This easy to use and easy to customize system is genre neutral, and these cards can help everyone to make better backstories. It doesn't matter if you're a novice making their first fighter, or an expert game master developing their corrupted galactic president. Better Backstories are suitable for Player Characters, Non-Player Characters, and Game Masters alike. They are designed to jump start your imagination and make your characters come to life.</p>
+          </div>
+        </div>
+        <div class="bio-img-border-left">
+          <img class="bio-img" src="../assets/Jay.jpg" alt="Jay Stillipec" />
         </div>
       </div>
-      <div class="bio-img-border">
-        <img class="bio-img" src="../assets/Jay.jpg" alt="Jay Stillipec" />
-      </div>
     </div>
+
     <div class="bio-wrapper">
       <h1>Jay Stilipec’s Backstory</h1>
       <div class="bio-container-left">
@@ -25,7 +28,7 @@
           <p>I love making role-playing characters. In order to make sure each character has a unique backstory of wonder and woe, I created Better Backstories. This easy to use and easy to customize system is genre neutral, and these cards can help everyone to make better backstories. It doesn't matter if you're a novice making their first fighter, or an expert game master developing their corrupted galactic president. Better Backstories are suitable for Player Characters, Non-Player Characters, and Game Masters alike. They are designed to jump start your imagination and make your characters come to life.</p>
         </div>
       </div>
-      <div class="bio-img-border">
+      <div class="bio-img-border-right">
         <img class="bio-img" src="../assets/Jay.jpg" alt="Jay Stillipec" />
       </div>
     </div>
@@ -105,7 +108,7 @@ p {
   background: #d2bf9e;
   width: 80%;
   float: left;
-  padding: 20px 20px 20px 120px;
+  padding: 20px 120px 20px 20px;
 }
 
 .bio-inner-container-right {
@@ -115,15 +118,23 @@ p {
 }
 .bio-inner-container-left {
   background: #e3dcdc;
-  text-align: right;
-  padding: 25px 25px 25px 125px;
+  text-align: left;
+  padding: 25px 125px 25px 25px;
 }
-.bio-img-border {
+.bio-img-border-left {
   background: #1d5574;
   padding: 20px;
   position: absolute;
   top: 30%;
 }
+.bio-img-border-right {
+  background: #1d5574;
+  padding: 20px;
+  position: absolute;
+  top: 30%;
+  right: 0;
+}
+
 .bio-img {
   max-height: 32vw;
 }
