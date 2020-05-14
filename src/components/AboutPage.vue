@@ -79,9 +79,9 @@
         <div class="bio-inner-container-right">
           <p>
             Rick is a retired Navy Corpsman, a former actor and a former roadie for Five Finger Death Punch. Was the Production Manager for Sapphire Studios (Home of PreviewsWorld and Game Trade Media). He works now as an independent hype-man for the gaming industry, traveling all over the country as Rick Rollz America.
-            <br />Facebook: www.facebook.com/rickrollzamerica
+            <!-- Facebook: www.facebook.com/rickrollzamerica
             Twitter:@geektography
-            Instagram:@RickRollzAmerica
+            Instagram:@RickRollzAmerica-->
           </p>
         </div>
       </div>
@@ -220,14 +220,41 @@ p {
   background: #ffffff;
 }
 @media only screen and (max-width: 600px) {
-  .bio-inner-container-right p,
-  .bio-inner-container-left p {
-    align-self: center;
-    font-size: 4vw;
+  p {
+    font-size: 5vw;
+  }
+  .bio-inner-container-left {
+    padding: 10px 63px 10px 10px;
+  }
+  .bio-inner-container-right {
+    padding: 10px 10px 10px 63px;
   }
   .bio-container-left,
   .bio-container-right {
     padding: 25px;
+  }
+  h1 {
+    font-size: 9vw;
+    margin-top: 20px;
+  }
+  .bio-img-border-right,
+  .bio-img-border-left {
+    padding: 15px;
+  }
+  .tiberius {
+    height: 250px;
+  }
+  .about-div-wrapper {
+    padding: 30px 50px 30px 20px;
+  }
+  .about-div {
+    padding: 10px 0 20px 30px;
+  }
+  .hello {
+    overflow: hidden;
+  }
+  p {
+    display: inline;
   }
 }
 </style>
