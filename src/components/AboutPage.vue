@@ -62,6 +62,17 @@
         <img class="bio-img" src="../assets/Stef.jpg" alt="Stef Wilson" />
       </div>
     </div>
+    <div class="bio-wrapper">
+      <h1>Kerry Anne</h1>
+      <div class="bio-container-left">
+        <div class="bio-inner-container-left">
+          <p>Kerry is the Digital Color Artist and Director of Operations at Bad Kerry Studios. She works with Naughty Faeries, Outpost 426 Studios, Totally Rad Comics, Sacred Chaos Comics, and others. She has many years experience in both the IT and graphic design industry and began coloring comic covers in late-2019. Her work has been featured on nearly a dozen covers already.</p>
+        </div>
+      </div>
+      <div class="bio-img-border-right">
+        <img class="bio-img" src="../assets/Kerry.jpg" alt="Kerry Anne" />
+      </div>
+    </div>
   </div>
 </template>
 
