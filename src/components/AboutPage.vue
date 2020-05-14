@@ -118,6 +118,9 @@ h1 {
   width: 70%;
   padding: 60px 100px 60px 40px;
   margin: 0 auto;
+  -webkit-box-shadow: 0px 5px 10px -5px black;
+  -moz-box-shadow: 0px 5px 10px -5px black;
+  box-shadow: 0px 5px 10px -5px black;
 }
 .about-div {
   background: #e3dcdc;
@@ -215,5 +218,16 @@ p {
 }
 .blaz {
   background: #ffffff;
+}
+@media only screen and (max-width: 600px) {
+  .bio-inner-container-right p,
+  .bio-inner-container-left p {
+    align-self: center;
+    font-size: 4vw;
+  }
+  .bio-container-left,
+  .bio-container-right {
+    padding: 25px;
+  }
 }
 </style>
