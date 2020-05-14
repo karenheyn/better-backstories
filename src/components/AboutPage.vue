@@ -51,6 +51,17 @@
         <img class="bio-img" src="../assets/Shaneh1.jpg" alt="Shaneh Woods" />
       </div>
     </div>
+    <div class="bio-wrapper">
+      <h1>Stef Wilson</h1>
+      <div class="bio-container-right">
+        <div class="bio-inner-container-right">
+          <p>Stef is a comic cover artist, sketch artist, and the Creative Director at Bad Kerry Studios. He works with Naughty Faeries, BDI, Outpost 426, Totally Rad Comics, Sacred Chaos Comics and others. He spent more than six years selling comic sketch art and developing a very unique style. He was discovered in mid-2019 by the comic world and now his work is exploding onto covers among leading independent publishers.</p>
+        </div>
+      </div>
+      <div class="bio-img-border-left">
+        <img class="bio-img" src="../assets/Stef.jpg" alt="Stef Wilson" />
+      </div>
+    </div>
   </div>
 </template>
 
