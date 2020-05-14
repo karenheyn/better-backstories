@@ -41,7 +41,7 @@
       </div>
     </div>
     <div class="bio-wrapper">
-      <h1>Shaneh Woods</h1>
+      <h1>Shaneh Woods' Backstory</h1>
       <div class="bio-container-left">
         <div class="bio-inner-container-left">
           <p>An accountant with the secret heart of a writer, long-time friend, and quote generator extraordinaire. Sarcasm, it's how she hugs!</p>
@@ -52,7 +52,7 @@
       </div>
     </div>
     <div class="bio-wrapper">
-      <h1>Stef Wilson</h1>
+      <h1>Stef Wilson's Backstory</h1>
       <div class="bio-container-right">
         <div class="bio-inner-container-right">
           <p>Stef is a comic cover artist, sketch artist, and the Creative Director at Bad Kerry Studios. He works with Naughty Faeries, BDI, Outpost 426, Totally Rad Comics, Sacred Chaos Comics and others. He spent more than six years selling comic sketch art and developing a very unique style. He was discovered in mid-2019 by the comic world and now his work is exploding onto covers among leading independent publishers.</p>
@@ -63,7 +63,7 @@
       </div>
     </div>
     <div class="bio-wrapper">
-      <h1>Kerry Anne</h1>
+      <h1>Kerry Anne's Backstory</h1>
       <div class="bio-container-left">
         <div class="bio-inner-container-left">
           <p>Kerry is the Digital Color Artist and Director of Operations at Bad Kerry Studios. She works with Naughty Faeries, Outpost 426 Studios, Totally Rad Comics, Sacred Chaos Comics, and others. She has many years experience in both the IT and graphic design industry and began coloring comic covers in late-2019. Her work has been featured on nearly a dozen covers already.</p>
@@ -74,7 +74,7 @@
       </div>
     </div>
     <div class="bio-wrapper">
-      <h1>Rick Ankney</h1>
+      <h1>Rick Ankney's Backstory</h1>
       <div class="bio-container-right">
         <div class="bio-inner-container-right">
           <p>
