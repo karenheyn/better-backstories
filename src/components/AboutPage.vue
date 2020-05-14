@@ -160,6 +160,9 @@ p {
   width: 80%;
   float: right;
   padding: 20px 20px 20px 120px;
+  -webkit-box-shadow: 5px 5px 10px -5px black;
+  -moz-box-shadow: 5px 5px 10px -5px black;
+  box-shadow: 5px 5px 10px -5px black;
 }
 
 .bio-container-left {
@@ -192,6 +195,9 @@ p {
   padding: 20px;
   position: absolute;
   top: 30%;
+  -webkit-box-shadow: 0px 5px 10px -5px black;
+  -moz-box-shadow: 0px 5px 10px -5px black;
+  box-shadow: 0px 5px 10px -5px black;
 }
 .bio-img-border-right {
   background: #1d5574;
@@ -199,6 +205,9 @@ p {
   position: absolute;
   top: 30%;
   right: 0;
+  -webkit-box-shadow: 0px 5px 10px -5px black;
+  -moz-box-shadow: 0px 5px 10px -5px black;
+  box-shadow: 0px 5px 10px -5px black;
 }
 
 .bio-img {
