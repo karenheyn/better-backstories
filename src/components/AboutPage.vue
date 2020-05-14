@@ -73,6 +73,22 @@
         <img class="bio-img" src="../assets/Kerry.jpg" alt="Kerry Anne" />
       </div>
     </div>
+    <div class="bio-wrapper">
+      <h1>Rick Ankney</h1>
+      <div class="bio-container-right">
+        <div class="bio-inner-container-right">
+          <p>
+            Rick is a retired Navy Corpsman, a former actor and a former roadie for Five Finger Death Punch. Was the Production Manager for Sapphire Studios (Home of PreviewsWorld and Game Trade Media). He works now as an independent hype-man for the gaming industry, traveling all over the country as Rick Rollz America.
+            <br />Facebook: www.facebook.com/rickrollzamerica
+            Twitter:@geektography
+            Instagram:@RickRollzAmerica
+          </p>
+        </div>
+      </div>
+      <div class="bio-img-border-left">
+        <img class="bio-img" src="../assets/Rick.jpg" alt="Rick Ankney" />
+      </div>
+    </div>
   </div>
 </template>
 
@@ -157,7 +173,7 @@ p {
   background: #e3dcdc;
   text-align: right;
   padding: 25px 25px 25px 125px;
-  min-height: 500px;
+  min-height: 550px;
   display: flex;
 }
 .bio-inner-container-right p,
@@ -168,7 +184,7 @@ p {
   background: #e3dcdc;
   text-align: left;
   padding: 25px 125px 25px 25px;
-  min-height: 500px;
+  min-height: 550px;
   display: flex;
 }
 .bio-img-border-left {

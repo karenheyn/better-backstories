@@ -71,7 +71,6 @@
   width: 100%;
   position: relative;
   padding-bottom: 120px;
-  background-position-y: -5px;
 }
 
 #nav {
