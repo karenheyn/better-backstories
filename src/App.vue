@@ -66,7 +66,6 @@
 
 #app .background {
   background-image: url("./assets/Backgroundlong.png");
-  background-position-y: -5px;
   /* background-attachment: fixed; */
   min-height: 100vh;
   width: 100%;
