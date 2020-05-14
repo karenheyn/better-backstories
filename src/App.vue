@@ -151,7 +151,7 @@ footer h4 {
 
 @media only screen and (max-width: 970px) {
   #nav h1 {
-    font-size: 30px;
+    font-size: 10vw;
   }
   #nav a {
     font-size: 17px;
@@ -171,9 +171,6 @@ footer h4 {
     position: relative;
     font-size: 15px;
     margin-top: 13px;
-  }
-  footer ul {
-    /* justify-content: space-around; */
   }
 }
 </style>
