@@ -224,10 +224,10 @@ p {
     font-size: 5vw;
   }
   .bio-inner-container-left {
-    padding: 10px 63px 10px 10px;
+    padding: 10px 65px 10px 10px;
   }
   .bio-inner-container-right {
-    padding: 10px 10px 10px 63px;
+    padding: 10px 10px 10px 65px;
   }
   .bio-container-left,
   .bio-container-right {
@@ -248,13 +248,14 @@ p {
     padding: 30px 50px 30px 20px;
   }
   .about-div {
-    padding: 10px 0 20px 30px;
+    padding: 10px;
   }
   .hello {
     overflow: hidden;
   }
-  p {
+  .about-div p {
     display: inline;
+    text-align: left;
   }
 }
 </style>
