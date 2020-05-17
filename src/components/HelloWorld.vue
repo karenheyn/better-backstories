@@ -11,8 +11,9 @@
       creative writing, educators, RPG Gamemasters, and even song writers. Works
       with any role playing system.
     </p>
-
-    <button>Learn More</button>
+    <router-link to="/product">
+      <button>Learn More</button>
+    </router-link>|
   </div>
 </template>
 
@@ -21,6 +22,14 @@ export default {
   name: "HelloWorld",
   props: {
     msg: String
+  },
+  methods: {
+    route: function(e) {
+      e.preventDefault();
+      // `this` inside methods points to the Vue instance
+      alert("Hello " + this.name + "!");
+      // `event` is the native DOM event
+    }
   }
 };
 </script>
@@ -79,11 +88,19 @@ button {
   box-shadow: 0 0 3px #000000;
   margin: 50px 0 0px 60px;
 }
+
+button:focus {
+  outline: none;
+  background: #94866e;
+}
 img {
   position: absolute;
   bottom: 70px;
   right: 10px;
   width: 36vw;
+}
+.hello a {
+  text-decoration: none;
 }
 @media only screen and (max-width: 600px) {
   /*mobile*/
