@@ -7,6 +7,9 @@
         <p>Better Backstories was designed by James ‘Jay’ Stilipec, Tim Mazurek, and Blazbaros. It was born out of a love of developing detailed life histories for role playing characters. It was brought to life through a Kickstarter campaign and the help of 1343 backers. While only asking for $3000, Jay was thrilled to garner more than $27,000 in pledges.</p>
       </div>
     </div>
+    <div class="quote">
+      <p>"I love making role-playing characters. In order to make sure each character has a unique backstory of wonder and woe, I created Better Backstories. This easy to use and easy to customize system is genre neutral, and these cards can help everyone to make better backstories. It doesn't matter if you're a novice making their first fighter, or an expert game master developing their corrupted galactic president. Better Backstories are suitable for Player Characters, Non-Player Characters, and Game Masters alike. They are designed to jump start your imagination and make your characters come to life."</p>
+    </div>
     <div class="bio-wrapper">
       <h1>Jay Stilipec’s Backstory</h1>
       <div class="bio-container-right">
@@ -218,6 +221,13 @@ p {
 }
 .blaz {
   background: #ffffff;
+}
+.quote {
+  margin: 80px 30px 0px 30px;
+}
+.quote p {
+  color: #ffffff;
+  font-family: "Oswald", sans-serif;
 }
 @media only screen and (max-width: 600px) {
   p {
