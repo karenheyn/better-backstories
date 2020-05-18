@@ -276,4 +276,17 @@ p {
     }
   } */
 }
+@media only screen and (min-width: 1365px) {
+  .bio-img {
+    max-height: 23vw;
+  }
+  .bio-img-border-left {
+    top: 32%;
+    left: 5%;
+  }
+  .bio-img-border-right {
+    top: 32%;
+    right: 5%;
+  }
+}
 </style>
