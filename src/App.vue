@@ -127,7 +127,7 @@ footer ul {
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin: 0 auto;
+  margin: 2px auto;
 }
 ul li {
   margin: 0 30px;
@@ -163,6 +163,7 @@ footer h4 {
     flex-direction: column;
     padding: 0;
   }
+
   footer {
     flex-direction: column;
     height: 70px;
