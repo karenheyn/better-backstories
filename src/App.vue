@@ -127,7 +127,7 @@ footer ul {
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin: 2px auto;
+  margin: 0 auto;
 }
 ul li {
   margin: 0 30px;
