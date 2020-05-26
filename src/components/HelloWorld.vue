@@ -134,7 +134,7 @@ img {
   }
   img {
     margin: 20px 0 60px 30px;
-    width: 57vw;
+    width: 55vw;
   }
   h2 {
     font-size: 5.5vw;

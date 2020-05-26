@@ -151,7 +151,7 @@ footer h4 {
 
 @media only screen and (max-width: 970px) {
   #nav h1 {
-    font-size: 10vw;
+    font-size: 9vw;
   }
   #nav a {
     font-size: 17px;
