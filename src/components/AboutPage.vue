@@ -18,7 +18,7 @@
       <h1>Jay Stilipec’s Backstory</h1>
       <div class="bio-container-right">
         <div class="bio-inner-container-right">
-          <p>Jay has been playing video games and role-playing for more than 30 years. Originally from Alaska, they joined the U.S. Navy in 1995 to be a broadcast journalist. Jay assisted with the editing of a Mutants & Masterminds supplement by Brainstorm Studios called Hero Hooks in 2005. In 2013, they beta-tested D&D Next (D&D 5e) while deployed to Afghanistan. Jay retired in 2015 and now works as a public affairs instructor for the Department of Defense. They also cosplay in Washington D.C. under the pseudonym Jazmine Cosplays. Better Backstories is their first Kickstarter and first private business venture.</p>
+          <p>Jay has been playing video games and role-playing for more than 30 years. Originally from Alaska, they joined the U.S. Navy in 1995 to be a broadcast journalist. Jay assisted with the editing of a Mutants & Masterminds supplement by Brainstorm Studios called Hero Hooks in 2005. In 2013, they beta-tested D&D Next (D&D 5e) while deployed to Afghanistan. Jay retired from the Navy in 2015 and now works as a public affairs instructor for the Department of Defense. They also cosplay in Washington D.C. under the pseudonym Jazmine Cosplays. Better Backstories is their first Kickstarter and first private business venture.</p>
         </div>
       </div>
       <div class="bio-img-border-left">
