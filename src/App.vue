@@ -172,6 +172,7 @@ footer h4 {
     position: relative;
     font-size: 15px;
     margin-top: 5px;
+    line-height: 1.6;
   }
 }
 </style>
