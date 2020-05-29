@@ -171,7 +171,7 @@ footer h4 {
   footer h4 {
     position: relative;
     font-size: 15px;
-    margin-top: 20px;
+    margin-top: 5px;
   }
 }
 </style>
