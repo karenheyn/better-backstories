@@ -119,6 +119,7 @@ footer {
   width: 100%;
   height: 69px;
   display: flex;
+  align-items: center;
 }
 
 footer ul {
@@ -171,7 +172,8 @@ footer h4 {
   footer h4 {
     position: relative;
     font-size: 15px;
-    margin-top: 5px;
+    right: 0;
+    bottom: 0;
   }
 }
 </style>
