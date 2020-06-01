@@ -138,7 +138,6 @@ p {
   font-family: "Oswald", sans-serif;
   color: #053475;
   font-size: 2.3vw;
-  text-indent: 2em;
   display: table-cell;
   vertical-align: middle;
 }
