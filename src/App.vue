@@ -7,9 +7,10 @@
           <h1>Better Backstories</h1>
         </div>
         <div class="nav-links-container">
-          <router-link to="/">Home</router-link>|
-          <router-link to="/product">Our Product</router-link>|
+          <router-link to="/">Home</router-link>
+          <router-link to="/product">Our Product</router-link>
           <router-link to="/about">About</router-link>
+          <router-link to="/contact">Contact</router-link>
         </div>
       </div>
       <router-view />
@@ -103,7 +104,7 @@
   text-decoration: none;
   margin: 10px;
   font-family: "Cinzel", serif;
-  font-size: 24px;
+  font-size: 21px;
 }
 
 #nav a.router-link-exact-active {
@@ -155,10 +156,11 @@ footer h4 {
     font-size: 9vw;
   }
   #nav a {
-    font-size: 17px;
+    font-size: 15px;
+    margin: 4px;
   }
 }
-@media only screen and (max-width: 860px) {
+@media only screen and (max-width: 980px) {
   #nav {
     justify-content: center;
     flex-direction: column;
