@@ -1,6 +1,6 @@
 <template>
   <div class="contact-email">
-    <a href="mailto: betterbackstories@gmail.com">
+    <a href="mailto: betterbackstories@gmail.com" target="blank">
       <i class="fa fa-envelope"></i>
       Contact Us
     </a>
