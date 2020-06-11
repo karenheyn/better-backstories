@@ -29,7 +29,7 @@
       <h1>Tim Mazurek’s Backstory</h1>
       <div class="bio-container-left">
         <div class="bio-inner-container-left">
-          <p>Tim has been teaching Graphic Design at colleges and universities all around the Baltimore beltway for the last 30 years. During the day, he leads a team of designers and photographers for the Department of Defense. At night, he runs a small design studio specializing in CD packaging design — A Little Fish, Graphic Design and Fine Typography. Tim is passionate and can be pretty geeky about design. Practicing graphic design is a fundamental part of his life.</p>
+          <p>Tim has been teaching Graphic Design at colleges and universities all around the Baltimore beltway for the last 30 years. During the day, he leads a team of designers and photographers for Uncle Sam. At night, he runs a small design studio specializing in CD packaging design — A Little Fish, Graphic Design and Fine Typography. Tim is passionate and can be pretty geeky about design. Practicing graphic design is a fundamental part of his life.</p>
         </div>
       </div>
       <div class="bio-img-border-right">
@@ -86,9 +86,9 @@
         <div class="bio-inner-container-right">
           <p>
             Rick is a retired Navy Corpsman, a former actor and a former roadie for Five Finger Death Punch. Was the Production Manager for Sapphire Studios (Home of PreviewsWorld and Game Trade Media). He works now as an independent hype-man for the gaming industry, traveling all over the country as Rick Rollz America.
-            <!-- Facebook: www.facebook.com/rickrollzamerica
+            Facebook: www.facebook.com/rickrollzamerica
             Twitter:@geektography
-            Instagram:@RickRollzAmerica-->
+            Instagram:@RickRollzAmerica
           </p>
         </div>
       </div>
@@ -110,7 +110,7 @@ export default {
 </script>
 
 <style scoped>
-h1 {
+/* h1 {
   font-family: "IM Fell English", serif;
   color: #d2bf9e;
   font-size: 6.5vw;
@@ -163,7 +163,7 @@ p {
   content: "";
   clear: both;
   display: table;
-}
+} */
 .bio-container-right {
   background: #d2bf9e;
   width: 80%;
