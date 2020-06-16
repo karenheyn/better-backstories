@@ -35,24 +35,41 @@ export default {
 </script>
 
 <style scoped>
+h1 {
+  font-family: "IM Fell English", serif;
+  color: #d2bf9e;
+  font-size: 6.5vw;
+  font-weight: 300;
+  text-align: center;
+  margin: 10px 65px;
+  text-shadow: 1px 1px 1px black;
+  margin: 0 0 30px 0;
+}
 .bio-wrapper {
   overflow: hidden;
 }
+.bio-flex-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 1;
+  width: 100%;
+}
 .bio-container-right {
   background: #d2bf9e;
-  width: 80%;
-  float: right;
+  /* float: right; */
   padding: 20px 20px 20px 120px;
   -webkit-box-shadow: 5px 5px 10px -5px black;
   -moz-box-shadow: 5px 5px 10px -5px black;
   box-shadow: 5px 5px 10px -5px black;
+  grid-column: 3/12;
+  grid-row: 1;
 }
 
 .bio-inner-container-right {
   background: #e3dcdc;
   text-align: right;
   padding: 25px 25px 25px 125px;
-  min-height: 550px;
+  /* min-height: 550px; */
   display: flex;
 }
 .bio-inner-container-right p,
@@ -62,13 +79,85 @@ export default {
 .bio-img-border-left {
   background: #1d5574;
   padding: 20px;
-  position: absolute;
-  top: 30%;
   -webkit-box-shadow: 0px 5px 10px -5px black;
   -moz-box-shadow: 0px 5px 10px -5px black;
   box-shadow: 0px 5px 10px -5px black;
+  height: fit-content;
+  align-self: center;
+  grid-row: 1;
+  grid-column: 2/5;
 }
 .bio-img {
-  max-height: 32vw;
+  max-width: 100%;
+  max-height: 100%;
+}
+p {
+  text-align: left;
+  font-family: "Oswald", sans-serif;
+  color: #053475;
+  font-size: 2.3vw;
+  display: table-cell;
+  vertical-align: middle;
+}
+@media only screen and (max-device-width: 1023px) and (min-device-width: 768px) {
+  .bio-img-border-left {
+    grid-column: 2/6;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .bio-flex-container {
+    grid-template-rows: auto;
+    grid-row-gap: 20px;
+  }
+  .bio-container-right {
+    grid-row: 2;
+    padding: 20px;
+    grid-column: 3/11;
+  }
+  .bio-img-border-left {
+    grid-row: 1;
+    grid-column: 3/11;
+  }
+  .bio-inner-container-right {
+    background: #e3dcdc;
+    text-align: right;
+    padding: 20px;
+    display: flex;
+  }
+  p {
+    font-size: 5vw;
+    font-size: 1rem;
+  }
+
+  h1 {
+    font-size: 9vw;
+    margin-top: 20px;
+  }
+  .bio-img-border-right,
+  .bio-img-border-left {
+    padding: 15px;
+  }
+  .tiberius {
+    height: 250px;
+  }
+  .about-div-wrapper {
+    padding: 30px 50px 30px 20px;
+  }
+  .about-div {
+    padding: 10px;
+  }
+  .hello {
+    overflow: hidden;
+  }
+  .about-div p {
+    display: inline;
+    text-align: left;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .bio-inner-container-right {
+    padding: 25px 25px 25px 200px;
+  }
 }
 </style>
