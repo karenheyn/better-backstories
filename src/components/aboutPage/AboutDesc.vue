@@ -48,20 +48,34 @@ p {
   font-family: "Oswald", sans-serif;
   color: #053475;
   font-size: 2.3vw;
-  display: table-cell;
-  vertical-align: middle;
 }
 .tiberius {
   position: relative;
   float: right;
   height: 400px;
   shape-outside: ellipse();
-  left: 128px;
+  left: 106px;
   margin-left: -128px;
 }
 .about-div::after {
   content: "";
   clear: both;
   display: table;
+}
+@media only screen and (max-width: 600px) {
+  .tiberius {
+    height: 250px;
+  }
+  .about-div-wrapper {
+    padding: 30px 50px 30px 20px;
+  }
+  .about-div {
+    padding: 10px;
+  }
+
+  .about-div p {
+    text-align: left;
+    font-size: 1rem;
+  }
 }
 </style>
