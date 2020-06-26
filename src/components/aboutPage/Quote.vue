@@ -26,5 +26,6 @@ export default {
 }
 .quote span {
   float: right;
+  margin-right: 50px;
 }
 </style>
