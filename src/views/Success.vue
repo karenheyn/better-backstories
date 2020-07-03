@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>SUCCESS!</h1>
-    <button v-on:click="getPDF">Open PDF</button>
+    <button v-on:click="confirmPayment">Open PDF</button>
   </div>
 </template>
 
@@ -11,6 +11,11 @@ import axios from "axios";
 export default {
   name: "Success",
   methods: {
+    confirmPayment() {
+      axios
+        .get("http://localhost:5000/pay/confirm")
+        .then((res) => console.log(res));
+    },
     getPDF() {
       axios("http://localhost:5000/pdf", {
         method: "GET",
