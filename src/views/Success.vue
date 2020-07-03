@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>SUCCESS!</h1>
-    <button v-on:click="confirmPayment">Open PDF</button>
+    <button v-if="paid" v-on:click="getPDF">Open PDF</button>
   </div>
 </template>
 
@@ -10,11 +10,26 @@ import axios from "axios";
 
 export default {
   name: "Success",
+  data() {
+    return {
+      paid: false,
+    };
+  },
+  mounted() {
+    axios.get("http://localhost:5000/pay/confirm").then((res) => {
+      console.log(res.data.status);
+      if (res.data.status == "succeeded") {
+        console.log(res.data.status);
+        this.confirmPayment();
+      } else {
+        this.paid = false;
+      }
+      console.log(this.paid);
+    });
+  },
   methods: {
     confirmPayment() {
-      axios
-        .get("http://localhost:5000/pay/confirm")
-        .then((res) => console.log(res));
+      this.paid = true;
     },
     getPDF() {
       axios("http://localhost:5000/pdf", {
