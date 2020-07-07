@@ -3,8 +3,18 @@
     <h1>About Better Backstories</h1>
     <div class="about-div-wrapper">
       <div class="about-div">
-        <img class="tiberius" src="../../assets/Tiberius_McAllister.png" alt="Tiberious" />
-        <p>Better Backstories was designed by James ‘Jay’ Stilipec, Tim Mazurek, and Blazbaros. It was born out of a love of developing detailed life histories for role playing characters. It was brought to life through a Kickstarter campaign and the help of 1343 backers. While only asking for $3000, Jay was thrilled to garner more than $27,000 in pledges.</p>
+        <img
+          class="tiberius"
+          src="../../assets/Tiberius_McAllister.png"
+          alt="Tiberious"
+        />
+        <p>
+          Better Backstories was designed by James ‘Jay’ Stilipec, Tim Mazurek,
+          and Blazbaros. It was born out of a love of developing detailed life
+          histories for role playing characters. It was brought to life through
+          a Kickstarter campaign and the help of 1343 backers. While only asking
+          for $3000, Jay was thrilled to garner more than $27,000 in pledges.
+        </p>
       </div>
     </div>
   </div>
@@ -12,7 +22,7 @@
 
 <script>
 export default {
-  name: "AboutDescription"
+  name: "AboutDescription",
   //   props: {
   //     msg: String
   //   }
@@ -28,7 +38,7 @@ h1 {
   text-align: center;
   margin: 10px 65px;
   text-shadow: 1px 1px 1px black;
-  margin: 0 0 30px 0;
+  margin: 20px 0 30px 0;
 }
 .about-div-wrapper {
   background: #d2bf9e;

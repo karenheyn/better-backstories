@@ -9,47 +9,47 @@
             <ul>
               <li v-if="person.twitter">
                 <a :href="person.twitter" target="_blank">
-                  <i class="fab fa-twitter"></i>
+                  <i class="fab fa-twitter fa-fw"></i>
                 </a>
               </li>
               <li v-if="person.instagram">
                 <a :href="person.instagram" target="_blank">
-                  <i class="fab fa-instagram"></i>
+                  <i class="fab fa-instagram fa-fw"></i>
                 </a>
               </li>
               <li v-if="person.deviantart">
                 <a :href="person.deviantart" target="_blank">
-                  <i class="fab fa-deviantart"></i>
+                  <i class="fab fa-deviantart fa-fw"></i>
                 </a>
               </li>
               <li v-if="person.artstation">
                 <a :href="person.artstation" target="_blank">
-                  <i class="fab fa-artstation"></i>
+                  <i class="fab fa-artstation fa-fw"></i>
                 </a>
               </li>
               <li v-if="person.facebook">
                 <a :href="person.facebook" target="_blank">
-                  <i class="fab fa-facebook"></i>
+                  <i class="fab fa-facebook fa-fw"></i>
                 </a>
               </li>
               <li v-if="person.tiktok">
                 <a :href="person.tiktok" target="_blank">
-                  <i class="fab fa-tiktok"></i>
+                  <i class="fab fa-tiktok fa-fw"></i>
                 </a>
               </li>
               <li v-if="person.linkedIn">
                 <a :href="person.linkedIn" target="_blank">
-                  <i class="fab fa-linkedin"></i>
+                  <i class="fab fa-linkedin fa-fw"></i>
                 </a>
               </li>
               <li v-if="person.youtube">
                 <a :href="person.youtube" target="_blank">
-                  <i class="fab fa-youtube"></i>
+                  <i class="fab fa-youtube fa-fw"></i>
                 </a>
               </li>
               <li v-if="person.website">
                 <a :href="person.website" target="_blank">
-                  <i class="fas fa-globe"></i>
+                  <i class="fas fa-globe fa-fw"></i>
                 </a>
               </li>
             </ul>
@@ -259,9 +259,10 @@ ul {
   display: flex;
   justify-content: flex-start;
   font-size: 2em;
+  flex-wrap: wrap;
 }
 ul li {
-  margin: 0 30px 0 0;
+  margin: 8px;
   list-style: none;
 }
 a {
