@@ -32,6 +32,26 @@
                   <i class="fab fa-facebook"></i>
                 </a>
               </li>
+              <li v-if="person.tiktok">
+                <a :href="person.tiktok" target="_blank">
+                  <i class="fab fa-tiktok"></i>
+                </a>
+              </li>
+              <li v-if="person.linkedIn">
+                <a :href="person.linkedIn" target="_blank">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+              </li>
+              <li v-if="person.youtube">
+                <a :href="person.youtube" target="_blank">
+                  <i class="fab fa-youtube"></i>
+                </a>
+              </li>
+              <li v-if="person.website">
+                <a :href="person.website" target="_blank">
+                  <i class="fas fa-globe"></i>
+                </a>
+              </li>
             </ul>
           </div>
         </div>
@@ -60,6 +80,12 @@ export default {
             "Jay has been playing video games and role-playing for more than 30 years. Originally from Alaska, they joined the U.S. Navy in 1995 to be a broadcast journalist. Jay assisted with the editing of a Mutants & Masterminds supplement by Brainstorm Studios called Hero Hooks in 2005. In 2013, they beta-tested D&D Next (D&D 5e) while deployed to Afghanistan. Jay retired from the Navy in 2015 and now works as a public affairs instructor for the Department of Defense. They also cosplay in Washington D.C. under the pseudonym Jazmine Cosplays. Better Backstories is their first Kickstarter and first private business venture.",
           image: require("@/assets/Jay.jpg"),
           alt: "Jay Stilipec",
+          linkedIn: "https://www.linkedin.com/in/jamesstilipec/",
+          facebook: "https://www.facebook.com/james.stilipec",
+          instagram: "https://www.instagram.com/jazrae22/",
+          twitter: "https://twitter.com/JazRae22",
+          tiktok: "https://www.tiktok.com/@jazrae22",
+          youtube: "https://www.youtube.com/user/JRpec",
         },
         {
           name: "Tim Mazurek'",
@@ -88,6 +114,7 @@ export default {
             "An accountant with the secret heart of a writer, long-time friend, and quote generator extraordinaire. Sarcasm, it's how she hugs!",
           image: require("@/assets/Shaneh1.jpg"),
           alt: "Shaneh Woods",
+          instagram: "https://www.instagram.com/numbertamer/",
         },
         {
           name: "Stef Wilsons'",
@@ -96,6 +123,9 @@ export default {
             "Stef is a comic cover artist, sketch artist, and the Creative Director at Bad Kerry Studios. He works with Naughty Faeries, BDI, Outpost 426, Totally Rad Comics, Sacred Chaos Comics and others. He spent more than six years selling comic sketch art and developing a very unique style. He was discovered in mid-2019 by the comic world and now his work is exploding onto covers among leading independent publishers.",
           image: require("@/assets/Stef.jpg"),
           alt: "Stef Wilson",
+          website: "https://www.stefwilsonart.com/",
+          instagram: "https://www.instagram.com/thestefwilson/",
+          facebook: "https://www.facebook.com/stef.wilson.98",
         },
         {
           name: "Kerry Anne's",
@@ -104,6 +134,7 @@ export default {
             "Kerry is the Digital Color Artist and Director of Operations at Bad Kerry Studios. She works with Naughty Faeries, Outpost 426 Studios, Totally Rad Comics, Sacred Chaos Comics, and others. She has many years experience in both the IT and graphic design industry and began coloring comic covers in late-2019. Her work has been featured on nearly a dozen covers already.",
           image: require("@/assets/Kerry.jpg"),
           alt: "Kerry Anne",
+          facebook: "https://www.facebook.com/kerry.anne.50999405",
         },
 
         {
@@ -115,6 +146,17 @@ export default {
           alt: "Rick Ankney",
           facebook: "www.facebook.com/rickrollzamerica",
           instagram: "www.instagram.com/rickrollzamerica",
+          tiktok: "https://www.tiktok.com/@rickrollzamerica",
+        },
+        {
+          name: "Karen Heyn's",
+          title: "Web Developer",
+          bio:
+            "Karen is a web developer who loves coding in javascript, traveling, and all things nintendo. She earned her bachelor's degree from Penn State University in 2017 and spent most of 2018 backpacking through Europe and the Middle East. Karen is based out of Arlington, VA where she lives with her significant other, Tom, their puggle, Daisy, and their cat, Bartholomew.",
+          image: require("@/assets/Karen.png"),
+          linkedIn: "https://www.linkedin.com/in/karenheyn/",
+          website: "https://www.karenheyn.com/",
+          facebook: "https://www.facebook.com/kheyn1",
         },
         {
           name: "Shenzhen XM Playing Cards Company's",
@@ -123,13 +165,6 @@ export default {
             "This manufacturing company offers professional printing services for custom Tarot Cards, Oracle Cards and Playing Cards, including booklets and a wide selection of boxes and packaging options. They are dedicated in helping artists and creators find the best printing options available for their designs. Their experienced professional sales team will help you choose from a full range of services to find the best combination of materials and finishing styles for your project's unique requirements. It is an eye opening experience for creators to discover all the printing possibilities available for their work.",
           image: require("@/assets/Shenzhen.png"),
           alt: "Shenzhen XM Playing Cards Co. Ltd.",
-        },
-        {
-          name: "Karen Heyn's",
-          title: "Web Developer",
-          bio:
-            "Karen is a web developer who loves coding in javascript, traveling, and all things nintendo. She earned her bachelor's degree from Penn State University in 2017 and spent most of 2018 backpacking through Europe and the Middle East. Karen is based out of Arlington, VA where she lives with her significant other, Tom, their puggle, Daisy, and their cat, Bartholomew.",
-          image: require("@/assets/Karen.png"),
         },
       ],
     };
@@ -224,6 +259,10 @@ ul {
   display: flex;
   justify-content: flex-start;
   font-size: 2em;
+}
+ul li {
+  margin: 0 30px 0 0;
+  list-style: none;
 }
 a {
   color: #053475;
