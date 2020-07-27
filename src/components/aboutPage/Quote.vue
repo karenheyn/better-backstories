@@ -36,4 +36,9 @@ export default {
   float: right;
   margin-right: 50px;
 }
+@media only screen and (min-width: 1024px) {
+  .quote p {
+    font-size: 27px;
+  }
+}
 </style>

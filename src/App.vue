@@ -11,7 +11,9 @@
           <router-link to="/product">Our Product</router-link>
           <router-link to="/about">About</router-link>
           <router-link to="/contact">Contact</router-link>
-          <router-link to="/buy">shop</router-link>
+          <router-link to="/buy">Shop</router-link>
+          <router-link to="/login">Login</router-link>
+          <router-link to="/register">Sign Up</router-link>
         </div>
       </div>
       <router-view />
@@ -79,10 +81,15 @@
 #app .background {
   background-image: url("./assets/Backgroundlong.png");
   /* background-attachment: fixed; */
+
   min-height: 100vh;
-  width: 100%;
+  /* width: 100%; */
   position: relative;
   padding-bottom: 120px;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #nav {
@@ -131,6 +138,7 @@ footer {
   width: 100%;
   height: 69px;
   display: flex;
+  align-items: center;
 }
 
 footer ul {
@@ -184,7 +192,8 @@ footer h4 {
   footer h4 {
     position: relative;
     font-size: 15px;
-    margin-top: 20px;
+    right: 0;
+    bottom: 0;
   }
 }
 </style>

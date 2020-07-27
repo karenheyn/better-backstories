@@ -38,12 +38,21 @@ const routes = [
       import(/* webpackChunkName: "Contact" */ "../views/Contact.vue"),
   },
   {
-    path: "/buy",
+    path: "/shop",
+    name: "Shop",
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "Buy" */ "../views/Shop.vue"),
+  },
+  {
+    path: "/buy/:product",
     name: "Buy",
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "Buy" */ "../views/Buy.vue"),
+    props: true,
   },
   {
     path: "/success",
@@ -63,9 +72,21 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "Buy" */ "../views/Cancel.vue"),
   },
+  {
+    path: "/login",
+    name: "login",
+    component: () => import("../views/Login.vue"),
+  },
+  {
+    path: "/register",
+    name: "register",
+    component: () => import("../views/Register.vue"),
+  },
 ];
 
 const router = new VueRouter({
+  mode: "history",
+  base: process.env.BASE_URL,
   routes,
 });
 

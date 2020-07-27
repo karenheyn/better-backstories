@@ -28,7 +28,6 @@
 <script>
 import axios from "axios";
 const stripe = window.Stripe(process.env.VUE_APP_STRIPE_SECRET_KEY);
-
 export default {
   components: {
     // StripeElements,
@@ -38,7 +37,7 @@ export default {
     amount: 1000,
     publishableKey: process.env.VUE_APP_STRIPE_SECRET_KEY,
     token: null,
-    charge: null,
+    charge: null
   }),
   methods: {
     submit() {
@@ -47,18 +46,20 @@ export default {
 
     createSession() {
       axios.post("http://localhost:5000/pay").then(
-        (response) => {
+        response => {
           console.log(response);
+          console.log(response.data.intent);
+          window.localStorage.setItem("intent", response.data.intent);
           stripe.redirectToCheckout({
-            sessionId: response.data.session_id,
+            sessionId: response.data.session_id
           });
         },
-        (error) => {
+        error => {
           console.log(error.message);
         }
       );
-    },
-  },
+    }
+  }
 };
 </script>
 
