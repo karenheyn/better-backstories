@@ -6,18 +6,9 @@
           <img class="card-img" src="../assets/pdf.png" alt="pdf cards" />
         </div>
         <div class="item-desc">
-          <h2>Basic Deck (Self-Printable PDF)</h2>
-          <h2 class="price">$7</h2>
-          <p>
-            Better Backstories is a card-based, random life history and plot
-            line generator for Players, NPCs, RPGs, creative writing, and more.
-            This system is a genre-neutral accessory that works with any game or
-            setting. Aside from backstories and plots, the cards also include
-            icons for generating random weather, landmarks and alignments. The
-            Basic Deck includes 68 cards: 10 cards in each of six categories,
-            three icon legend cards, five blank cards for developing your own
-            backstory elements, and instructions.
-          </p>
+          <h2>{{product[0].name}} (Self-Printable PDF)</h2>
+          <h2 class="price">${{product[0].price}}</h2>
+          <p>{{product[0].description}}</p>
         </div>
       </div>
       <button @click="submit" id="checkout-button">Checkout</button>
@@ -27,37 +18,53 @@
 
 <script>
 import axios from "axios";
+import store from "../store/index.js";
 const stripe = window.Stripe(process.env.VUE_APP_STRIPE_SECRET_KEY);
+
 export default {
   components: {
     // StripeElements,
   },
+  store,
+
   data: () => ({
     loading: false,
     amount: 1000,
     publishableKey: process.env.VUE_APP_STRIPE_SECRET_KEY,
     token: null,
-    charge: null
+    charge: null,
+    products: store.state.products
   }),
+  computed: {
+    product: function() {
+      return this.products.filter(
+        item => item.name === this.$route.params.product
+      );
+    }
+  },
   methods: {
     submit() {
       this.createSession();
     },
 
     createSession() {
-      axios.post("http://localhost:5000/pay").then(
-        response => {
-          console.log(response);
-          console.log(response.data.intent);
-          window.localStorage.setItem("intent", response.data.intent);
-          stripe.redirectToCheckout({
-            sessionId: response.data.session_id
-          });
-        },
-        error => {
-          console.log(error.message);
-        }
-      );
+      axios
+        .post("http://localhost:5000/pay", {
+          product: this.product[0]
+        })
+        .then(
+          response => {
+            console.log(response);
+            console.log(response.data.intent);
+            window.localStorage.setItem("intent", response.data.intent);
+            stripe.redirectToCheckout({
+              sessionId: response.data.session_id
+            });
+          },
+          error => {
+            console.log(error.message);
+          }
+        );
     }
   }
 };
@@ -78,7 +85,10 @@ export default {
   flex-wrap: wrap;
 }
 .item-desc {
+  display: flex;
+  flex-direction: column;
   max-width: 550px;
+  justify-content: center;
 }
 button {
   display: flex;

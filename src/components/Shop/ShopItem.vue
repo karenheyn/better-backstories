@@ -23,6 +23,11 @@ export default {
 <style scoped>
 h2 {
   font-size: 1.5rem;
+  text-decoration: none;
+  color: #053475;
+}
+a {
+  text-decoration: none;
 }
 .product-container {
   width: 100%;

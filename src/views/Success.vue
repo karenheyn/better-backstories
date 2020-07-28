@@ -20,13 +20,11 @@ export default {
     axios
       .get("http://localhost:5000/pay/confirm", {
         params: {
-          intent: window.localStorage.getItem(intent)
+          intent: intent
         }
       })
       .then(res => {
         console.log(res.data.status);
-        console.log;
-
         if (res.data.status == "succeeded") {
           console.log(res.data.status);
           this.confirmPayment();
