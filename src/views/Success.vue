@@ -7,9 +7,11 @@
 
 <script>
 import axios from "axios";
+import store from "../store/index.js";
 
 export default {
   name: "Success",
+  store,
   data() {
     return {
       paid: false
@@ -17,6 +19,7 @@ export default {
   },
   mounted() {
     const intent = window.localStorage.getItem(intent);
+    const item = window.localStorage.getItem(item);
     axios
       .get("http://localhost:5000/pay/confirm", {
         params: {
