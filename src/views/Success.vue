@@ -14,12 +14,14 @@ export default {
   store,
   data() {
     return {
-      paid: false
+      paid: false,
+      item: store.state.itemPurchased
     };
   },
   mounted() {
     const intent = window.localStorage.getItem(intent);
-    const item = window.localStorage.getItem(item);
+    // const product = window.localStorage.getItem(product);
+
     axios
       .get("http://localhost:5000/pay/confirm", {
         params: {
@@ -34,14 +36,17 @@ export default {
         } else {
           this.paid = false;
         }
-        console.log(this.paid);
+        console.log(this.item);
       });
   },
   methods: {
     confirmPayment() {
+      let product = window.localStorage.getItem("product");
+
+      console.log(product);
       this.paid = true;
     },
-    getPDF() {
+    getBasicDeck() {
       axios("http://localhost:5000/pdf/basicdeckss", {
         method: "GET",
         responseType: "blob" //Force to receive data in a Blob Format
@@ -54,6 +59,37 @@ export default {
         .catch(error => {
           console.log(error);
         });
+    },
+    getCardBundle() {
+      axios("http://localhost:5000/pdf/cardbundless", {
+        method: "GET",
+        responseType: "blob" //Force to receive data in a Blob Format
+      })
+        .then(response => {
+          const file = new Blob([response.data], { type: "application/pdf" });
+          const fileURL = URL.createObjectURL(file);
+          window.open(fileURL);
+        })
+        .catch(error => {
+          console.log(error);
+        });
+    },
+
+    getPDF() {
+      let product = window.localStorage.getItem("product");
+      switch (product) {
+        case "Basic Deck":
+          this.getBasicDeck();
+          break;
+        case "Card Bundle":
+          this.getCardBundle();
+          break;
+        case "Full Bundle with Box":
+          console.log("yay");
+          break;
+        default:
+          console.log("yay");
+      }
     }
   }
 };

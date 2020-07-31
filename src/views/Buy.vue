@@ -56,6 +56,10 @@ export default {
           response => {
             console.log(response);
             console.log(response.data.intent);
+            this.$store.commit("getItem", this.product[0].name);
+            console.log(store.state.itemPurchased);
+            window.localStorage.setItem("product", this.product[0].name);
+
             window.localStorage.setItem("intent", response.data.intent);
             stripe.redirectToCheckout({
               sessionId: response.data.session_id

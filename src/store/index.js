@@ -42,8 +42,13 @@ export default new Vuex.Store({
         image: require("@/assets/Akmhenos_Courage.png"),
       },
     ],
+    itemPurchased: "",
   },
-  mutations: {},
+  mutations: {
+    getItem: function(state, item) {
+      this.state.itemPurchased = item;
+    },
+  },
   actions: {},
   modules: {},
 });
