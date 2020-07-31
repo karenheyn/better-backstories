@@ -35,7 +35,7 @@ export default new Vuex.Store({
         image: require("@/assets/Andrea_the_Sharp.png"),
       },
       {
-        name: "Mystical Booster",
+        name: "Mystical Booster ",
         price: 2,
         description:
           "The Mystical Booster includes 10 new cards that focus on magic and fantasy concepts.  Also includes two blank cards for creating your own backstory elements.",
