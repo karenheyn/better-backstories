@@ -69,7 +69,7 @@ h1 {
   text-align: center;
   margin: 10px 65px;
   text-shadow: 1px 1px 1px black;
-  margin: 0 0 30px 0;
+  margin: 30px 0;
 }
 .products {
   padding: 30px;
@@ -81,5 +81,18 @@ h1 {
 }
 h2 {
   color: white;
+}
+@media only screen and (max-device-width: 1023px) and (min-device-width: 768px) {
+  h2 {
+    font-size: 1.3rem;
+  }
+}
+@media only screen and (max-device-width: 768px) {
+  .products {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  h1 {
+    font-size: 43px;
+  }
 }
 </style>

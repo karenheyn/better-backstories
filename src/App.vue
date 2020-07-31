@@ -17,7 +17,7 @@
         </div>
       </div>
       <router-view />
-      <footer>
+      <footer class="footer">
         <ul>
           <li>
             <a href="https://www.instagram.com/betterbackstories/" target="blank">
@@ -122,7 +122,7 @@
   border-bottom: 2px solid #d2bf9e;
 }
 
-footer {
+.footer {
   position: absolute;
   bottom: 0;
   background: #012531d6;

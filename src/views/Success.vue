@@ -1,6 +1,7 @@
 <template>
   <div>
     <h1>SUCCESS!</h1>
+    <h2>Please do not navigate away from the page until you have redeemed your PDF.</h2>
     <button v-if="paid" v-on:click="getSSPDF">Open Single-Sided PDF</button>
     <button v-if="paid" v-on:click="getDSPDF">Open Double-Sided PDF</button>
   </div>
@@ -240,7 +241,24 @@ export default {
 
 <style scoped>
 h1 {
+  color: #d2bf9e;
+  font-family: "IM Fell English", serif;
+  font-size: 3.5rem;
+}
+h2 {
   font-family: "Oswald", sans-serif;
-  color: white;
+  color: #ffffff;
+}
+button {
+  display: flex;
+  padding: 10px 30px;
+  font-size: 30px;
+  font-family: "IM Fell English", serif;
+  border-radius: 50px;
+  background: #d2bf9e;
+  color: #003b8e;
+  border: 1px solid linear-gradient(#ffffff, #000000);
+  box-shadow: 0 0 3px #000000;
+  margin: 40px auto;
 }
 </style>
