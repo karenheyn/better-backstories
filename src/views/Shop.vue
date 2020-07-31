@@ -7,6 +7,15 @@
           <ShopItem v-bind:products="product" />
         </div>
       </div>
+      <div class="other">
+        <h2>Other Products:</h2>
+        <a href="https://www.armorclass10.com/collections/better-backstories" target="blank">
+          <h4>Shop Clothing</h4>
+        </a>
+        <a href="https://www.armorclass10.com/collections/better-backstories" target="blank">
+          <h4>Shop Merch</h4>
+        </a>
+      </div>
     </div>
   </div>
 </template>
@@ -80,7 +89,23 @@ h1 {
   grid-gap: 50px;
 }
 h2 {
-  color: white;
+  color: #053475;
+}
+a {
+  text-decoration: none;
+  color: #1d5574;
+}
+a:hover {
+  color: #d2bf9e;
+}
+.other {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+  height: 105%;
+  background: #e3dcdc;
+  border: 15px solid #d2bf9e;
 }
 @media only screen and (max-device-width: 1023px) and (min-device-width: 768px) {
   h2 {

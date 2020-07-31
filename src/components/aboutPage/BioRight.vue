@@ -85,7 +85,7 @@ export default {
           instagram: "https://www.instagram.com/jazrae22/",
           twitter: "https://twitter.com/JazRae22",
           tiktok: "https://www.tiktok.com/@jazrae22",
-          youtube: "https://www.youtube.com/user/JRpec",
+          youtube: "https://www.youtube.com/user/JRpec"
         },
         {
           name: "Tim Mazurek'",
@@ -93,7 +93,7 @@ export default {
           bio:
             "Tim has been teaching Graphic Design at colleges and universities all around the Baltimore beltway for the last 30 years. During the day, he leads a team of designers and photographers for Uncle Sam. At night, he runs a small design studio specializing in CD packaging design — A Little Fish, Graphic Design and Fine Typography. Tim is passionate and can be pretty geeky about design. Practicing graphic design is a fundamental part of his life.",
           image: require("@/assets/Tim.png"),
-          alt: "Tim Mazurek",
+          alt: "Tim Mazurek"
         },
         {
           name: "Blazbaros'",
@@ -105,7 +105,7 @@ export default {
           deviantart: "https://www.deviantart.com/blazbaros",
           twitter: "https://twitter.com/Blazbaros",
           instagram: "https://www.instagram.com/blazbaros",
-          artstation: "https://www.artstation.com/blazbaros",
+          artstation: "https://www.artstation.com/blazbaros"
         },
         {
           name: "Shaneh Woods'",
@@ -114,7 +114,7 @@ export default {
             "An accountant with the secret heart of a writer, long-time friend, and quote generator extraordinaire. Sarcasm, it's how she hugs!",
           image: require("@/assets/Shaneh1.jpg"),
           alt: "Shaneh Woods",
-          instagram: "https://www.instagram.com/numbertamer/",
+          instagram: "https://www.instagram.com/numbertamer/"
         },
         {
           name: "Stef Wilsons'",
@@ -125,7 +125,7 @@ export default {
           alt: "Stef Wilson",
           website: "https://www.stefwilsonart.com/",
           instagram: "https://www.instagram.com/thestefwilson/",
-          facebook: "https://www.facebook.com/stef.wilson.98",
+          facebook: "https://www.facebook.com/stef.wilson.98"
         },
         {
           name: "Kerry Anne's",
@@ -134,19 +134,19 @@ export default {
             "Kerry is the Digital Color Artist and Director of Operations at Bad Kerry Studios. She works with Naughty Faeries, Outpost 426 Studios, Totally Rad Comics, Sacred Chaos Comics, and others. She has many years experience in both the IT and graphic design industry and began coloring comic covers in late-2019. Her work has been featured on nearly a dozen covers already.",
           image: require("@/assets/Kerry.jpg"),
           alt: "Kerry Anne",
-          facebook: "https://www.facebook.com/kerry.anne.50999405",
+          facebook: "https://www.facebook.com/kerry.anne.50999405"
         },
 
         {
           name: "Rick Ankney's",
-          title: "Colorist",
+          title: "Marketing",
           bio:
             "Rick is a retired Navy Corpsman, a former actor and a former roadie for Five Finger Death Punch. Was the Production Manager for Sapphire Studios (Home of PreviewsWorld and Game Trade Media). He works now as an independent hype-man for the gaming industry, traveling all over the country as Rick Rollz America.",
           image: require("@/assets/Rick.jpg"),
           alt: "Rick Ankney",
           facebook: "www.facebook.com/rickrollzamerica",
           instagram: "www.instagram.com/rickrollzamerica",
-          tiktok: "https://www.tiktok.com/@rickrollzamerica",
+          tiktok: "https://www.tiktok.com/@rickrollzamerica"
         },
         {
           name: "Karen Heyn's",
@@ -156,7 +156,7 @@ export default {
           image: require("@/assets/Karen.png"),
           linkedIn: "https://www.linkedin.com/in/karenheyn/",
           website: "https://www.karenheyn.com/",
-          facebook: "https://www.facebook.com/kheyn1",
+          facebook: "https://www.facebook.com/kheyn1"
         },
         {
           name: "Shenzhen XM Playing Cards Company's",
@@ -164,11 +164,11 @@ export default {
           bio:
             "This manufacturing company offers professional printing services for custom Tarot Cards, Oracle Cards and Playing Cards, including booklets and a wide selection of boxes and packaging options. They are dedicated in helping artists and creators find the best printing options available for their designs. Their experienced professional sales team will help you choose from a full range of services to find the best combination of materials and finishing styles for your project's unique requirements. It is an eye opening experience for creators to discover all the printing possibilities available for their work.",
           image: require("@/assets/Shenzhen.png"),
-          alt: "Shenzhen XM Playing Cards Co. Ltd.",
-        },
-      ],
+          alt: "Shenzhen XM Playing Cards Co. Ltd."
+        }
+      ]
     };
-  },
+  }
 };
 </script>
 
@@ -318,7 +318,6 @@ a:active {
     font-size: 5vw;
     font-size: 1rem;
   }
-
   h1 {
     font-size: 9vw;
     margin-top: 20px;
@@ -344,7 +343,6 @@ a:active {
     text-align: left;
   }
 }
-
 @media only screen and (min-width: 1400px) {
   .bio-inner-container-right {
     padding: 200px;
