@@ -12,7 +12,7 @@
         <a href="https://www.armorclass10.com/collections/better-backstories" target="blank">
           <h4>Shop Clothing</h4>
         </a>
-        <a href="https://www.armorclass10.com/collections/better-backstories" target="blank">
+        <a href="https://www.redbubble.com/people/AllThatJazmine/shop?asc=u" target="blank">
           <h4>Shop Merch</h4>
         </a>
       </div>
