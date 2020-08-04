@@ -69,7 +69,6 @@
 <script>
 export default {
   name: "BioRight",
-  el: "BioRight",
   data() {
     return {
       people: [

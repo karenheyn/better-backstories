@@ -20,6 +20,7 @@
 import axios from "axios";
 import store from "../store/index.js";
 const stripe = window.Stripe(process.env.VUE_APP_STRIPE_SECRET_KEY);
+const baseURL = process.env.VUE_APP_BASE_URL;
 
 export default {
   components: {
@@ -44,12 +45,13 @@ export default {
   },
   methods: {
     submit() {
+      console.log(baseURL);
       this.createSession();
     },
 
     createSession() {
       axios
-        .post("http://localhost:5000/pay", {
+        .post(`${baseURL}/pay`, {
           product: this.product[0]
         })
         .then(
