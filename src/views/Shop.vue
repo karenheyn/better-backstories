@@ -57,7 +57,7 @@ export default {
           image: require("@/assets/Andrea_the_Sharp.png")
         },
         {
-          name: "Mystical Booster ",
+          name: "Mystical Booster",
           price: 2,
           description:
             "The Mystical Booster includes 10 new cards that focus on magic and fantasy concepts.  Also includes two blank cards for creating your own backstory elements.",
@@ -107,9 +107,12 @@ a:hover {
   background: #e3dcdc;
   border: 15px solid #d2bf9e;
 }
-@media only screen and (max-device-width: 1023px) and (min-device-width: 768px) {
+@media only screen and (max-device-width: 1024px) and (min-device-width: 768px) {
   h2 {
     font-size: 1.3rem;
+  }
+  .products {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 @media only screen and (max-device-width: 768px) {

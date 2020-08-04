@@ -206,7 +206,7 @@ export default {
         case "Technical Booster":
           this.getTechnicalBoosterSS();
           break;
-        case "Mystical Booster ":
+        case "Mystical Booster":
           this.getMysticalBoosterSS();
           break;
         default:
@@ -215,6 +215,7 @@ export default {
     },
     getDSPDF() {
       let product = window.localStorage.getItem("product");
+      console.log(product);
       switch (product) {
         case "Basic Deck":
           this.getBasicDeckDS();
@@ -228,7 +229,7 @@ export default {
         case "Technical Booster":
           this.getTechnicalBoosterDS();
           break;
-        case "Mystical Booster ":
+        case "Mystical Booster":
           this.getMysticalBoosterDS();
           break;
         default:
