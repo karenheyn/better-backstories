@@ -1,8 +1,11 @@
 <template>
   <div>
     <h1>SUCCESS!</h1>
-    <h2>Thank you for purchasing our {{product}}.</h2>
-    <h2>Please do not navigate away from the page until you have redeemed your PDF.</h2>
+    <h2>Thank you for purchasing our {{ product }}.</h2>
+    <h2>
+      Please do not navigate away from the page until you have redeemed your
+      PDF.
+    </h2>
     <button v-if="paid" v-on:click="getSSPDF">Open Single-Sided PDF</button>
     <button v-if="paid" v-on:click="getDSPDF">Open Double-Sided PDF</button>
   </div>
@@ -19,7 +22,7 @@ export default {
     return {
       paid: false,
       item: store.state.itemPurchased,
-      product: window.localStorage.getItem("product")
+      product: window.localStorage.getItem("product"),
     };
   },
   mounted() {
@@ -28,9 +31,9 @@ export default {
 
     axios
       .post(`${baseURL}/pay/confirm`, {
-        intent: intent
+        intent: intent,
       })
-      .then(res => {
+      .then((res) => {
         console.log(res.data.status);
         if (res.data.status == "succeeded") {
           console.log(res.data.status);
@@ -54,70 +57,70 @@ export default {
     getBasicDeckSS() {
       axios(`${baseURL}/pdf/basicdeckss`, {
         method: "GET",
-        responseType: "blob" //Force to receive data in a Blob Format
+        responseType: "blob", //Force to receive data in a Blob Format
       })
-        .then(response => {
+        .then((response) => {
           const file = new Blob([response.data], { type: "application/pdf" });
           const fileURL = URL.createObjectURL(file);
           window.open(fileURL);
         })
-        .catch(error => {
+        .catch((error) => {
           console.log(error);
         });
     },
     getCardBundleSS() {
       axios(`${baseURL}/pdf/cardbundless`, {
         method: "GET",
-        responseType: "blob" //Force to receive data in a Blob Format
+        responseType: "blob", //Force to receive data in a Blob Format
       })
-        .then(response => {
+        .then((response) => {
           const file = new Blob([response.data], { type: "application/pdf" });
           const fileURL = URL.createObjectURL(file);
           window.open(fileURL);
         })
-        .catch(error => {
+        .catch((error) => {
           console.log(error);
         });
     },
     getBundleWithBoxSS() {
       axios(`${baseURL}/pdf/bundlewithboxss`, {
         method: "GET",
-        responseType: "blob" //Force to receive data in a Blob Format
+        responseType: "blob", //Force to receive data in a Blob Format
       })
-        .then(response => {
+        .then((response) => {
           const file = new Blob([response.data], { type: "application/pdf" });
           const fileURL = URL.createObjectURL(file);
           window.open(fileURL);
         })
-        .catch(error => {
+        .catch((error) => {
           console.log(error);
         });
     },
     getTechnicalBoosterSS() {
       axios(`${baseURL}/pdf/technicalboosterss`, {
         method: "GET",
-        responseType: "blob" //Force to receive data in a Blob Format
+        responseType: "blob", //Force to receive data in a Blob Format
       })
-        .then(response => {
+        .then((response) => {
           const file = new Blob([response.data], { type: "application/pdf" });
           const fileURL = URL.createObjectURL(file);
           window.open(fileURL);
         })
-        .catch(error => {
+        .catch((error) => {
           console.log(error);
         });
     },
     getMysticalBoosterSS() {
       axios(`${baseURL}/pdf/mysticalboosterss`, {
         method: "GET",
-        responseType: "blob" //Force to receive data in a Blob Format
+        responseType: "blob", //Force to receive data in a Blob Format
       })
-        .then(response => {
+        .then((response) => {
           const file = new Blob([response.data], { type: "application/pdf" });
           const fileURL = URL.createObjectURL(file);
           window.open(fileURL);
         })
-        .catch(error => {
+        .catch((error) => {
           console.log(error);
         });
     },
@@ -125,70 +128,70 @@ export default {
     getBasicDeckDS() {
       axios(`${baseURL}/pdf/basicdeckds`, {
         method: "GET",
-        responseType: "blob" //Force to receive data in a Blob Format
+        responseType: "blob", //Force to receive data in a Blob Format
       })
-        .then(response => {
+        .then((response) => {
           const file = new Blob([response.data], { type: "application/pdf" });
           const fileURL = URL.createObjectURL(file);
           window.open(fileURL);
         })
-        .catch(error => {
+        .catch((error) => {
           console.log(error);
         });
     },
     getCardBundleDS() {
       axios(`${baseURL}/pdf/cardbundleds`, {
         method: "GET",
-        responseType: "blob" //Force to receive data in a Blob Format
+        responseType: "blob", //Force to receive data in a Blob Format
       })
-        .then(response => {
+        .then((response) => {
           const file = new Blob([response.data], { type: "application/pdf" });
           const fileURL = URL.createObjectURL(file);
           window.open(fileURL);
         })
-        .catch(error => {
+        .catch((error) => {
           console.log(error);
         });
     },
     getBundleWithBoxDS() {
       axios(`${baseURL}/pdf/bundlewithboxds`, {
         method: "GET",
-        responseType: "blob" //Force to receive data in a Blob Format
+        responseType: "blob", //Force to receive data in a Blob Format
       })
-        .then(response => {
+        .then((response) => {
           const file = new Blob([response.data], { type: "application/pdf" });
           const fileURL = URL.createObjectURL(file);
           window.open(fileURL);
         })
-        .catch(error => {
+        .catch((error) => {
           console.log(error);
         });
     },
     getTechnicalBoosterDS() {
       axios(`${baseURL}/pdf/technicalboosterds`, {
         method: "GET",
-        responseType: "blob" //Force to receive data in a Blob Format
+        responseType: "blob", //Force to receive data in a Blob Format
       })
-        .then(response => {
+        .then((response) => {
           const file = new Blob([response.data], { type: "application/pdf" });
           const fileURL = URL.createObjectURL(file);
           window.open(fileURL);
         })
-        .catch(error => {
+        .catch((error) => {
           console.log(error);
         });
     },
     getMysticalBoosterDS() {
       axios(`${baseURL}/pdf/mysticalboosterds`, {
         method: "GET",
-        responseType: "blob" //Force to receive data in a Blob Format
+        responseType: "blob", //Force to receive data in a Blob Format
       })
-        .then(response => {
+        .then((response) => {
           const file = new Blob([response.data], { type: "application/pdf" });
           const fileURL = URL.createObjectURL(file);
           window.open(fileURL);
         })
-        .catch(error => {
+        .catch((error) => {
           console.log(error);
         });
     },
@@ -237,8 +240,8 @@ export default {
         default:
           console.log("err, something went wrong....");
       }
-    }
-  }
+    },
+  },
 };
 </script>
 
@@ -251,6 +254,7 @@ h1 {
 h2 {
   font-family: "Oswald", sans-serif;
   color: #ffffff;
+  padding-bottom: 10px;
 }
 button {
   display: flex;
