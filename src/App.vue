@@ -6,12 +6,18 @@
       <footer class="footer">
         <ul>
           <li>
-            <a href="https://www.instagram.com/betterbackstories/" target="blank">
+            <a
+              href="https://www.instagram.com/betterbackstories/"
+              target="blank"
+            >
               <img src="./assets/icons/instagram.png" alt="instagram" />
             </a>
           </li>
           <li>
-            <a href="https://www.facebook.com/betterbackstories/" target="blank">
+            <a
+              href="https://www.facebook.com/betterbackstories/"
+              target="blank"
+            >
               <img src="./assets/icons/facebook.png" alt="facebook" />
             </a>
           </li>
@@ -28,7 +34,11 @@
               href="https://youtube.com/watch?v=x4Zg--yx3A0&list=PLbldekf_km5Lj62hCFhrX5CDKnYif-57m"
               target="blank"
             >
-              <img class="youtube-link" src="./assets/icons/youtube.png" alt="youtube" />
+              <img
+                class="youtube-link"
+                src="./assets/icons/youtube.png"
+                alt="youtube"
+              />
             </a>
           </li>
         </ul>
@@ -41,8 +51,8 @@
 import Nav from "./components/Nav/Nav";
 export default {
   components: {
-    Nav
-  }
+    Nav,
+  },
 };
 </script>
 <style>
@@ -50,6 +60,9 @@ export default {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+html {
+  min-height: 100vh;
 }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
