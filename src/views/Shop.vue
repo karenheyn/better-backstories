@@ -123,7 +123,7 @@ a:hover {
 .other:hover {
   background: #ffffff;
 }
-@media only screen and (max-device-width: 1024px) and (min-device-width: 768px) {
+@media only screen and (max-device-width: 1024px) and (min-device-width: 760px) {
   h2 {
     font-size: 1.3rem;
   }
