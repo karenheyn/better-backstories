@@ -67,6 +67,12 @@ export default {
   /* text-decoration: underline #d2bf9e; */
   border-bottom: 2px solid #d2bf9e;
 }
+@media only screen and (max-width: 1025px) {
+  #nav a {
+    font-size: 20px;
+    margin: 6px;
+  }
+}
 @media only screen and (max-width: 970px) {
   #nav h1 {
     font-size: 9vw;

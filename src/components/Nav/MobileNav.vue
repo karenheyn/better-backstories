@@ -31,6 +31,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-direction: column;
   flex-wrap: wrap;
   padding: 0 20px;
 }
