@@ -12,6 +12,9 @@
         </div>
       </div>
       <button @click="submit" id="checkout-button">Checkout</button>
+      <a v-if="product[0].dtc" :href="product[0].dtc" target="blank"
+        ><h4>Print-on-Demand decks at DriveThruCards</h4></a
+      >
     </div>
   </div>
 </template>
@@ -114,6 +117,15 @@ button:hover {
 }
 h2 {
   color: white;
+}
+h4 {
+  color: white;
+}
+a {
+  text-decoration: none;
+}
+h4:hover {
+  color: #d2bf9e;
 }
 p {
   color: white;
