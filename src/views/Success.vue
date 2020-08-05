@@ -254,7 +254,7 @@ h1 {
 h2 {
   font-family: "Oswald", sans-serif;
   color: #ffffff;
-  padding-bottom: 10px;
+  padding-bottom: 11px;
 }
 button {
   display: flex;
