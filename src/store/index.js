@@ -10,7 +10,7 @@ export default new Vuex.Store({
         name: "Basic Deck",
         price: 7,
         description:
-          "The Basic Deck includes 68 cards: 10 cards in each of six categories, three icon legend cards, five blank cards for developing your own backstory elements, and instructions.",
+          "The Basic Deck includes 68 cards: 10 cards in each of six categories, three reference cards, five blank cards for developing your own backstory elements, and instructions.",
         image: require("@/assets/Draeorc.png"),
       },
       {
