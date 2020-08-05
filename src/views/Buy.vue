@@ -6,9 +6,9 @@
           <img class="card-img" src="../assets/pdf.png" alt="pdf cards" />
         </div>
         <div class="item-desc">
-          <h2>{{product[0].name}} (Self-Printable PDF)</h2>
-          <h2 class="price">${{product[0].price}}</h2>
-          <p>{{product[0].description}}</p>
+          <h2>{{ product[0].name }} (Self-Printable PDF)</h2>
+          <h2 class="price">${{ product[0].price }}</h2>
+          <p>{{ product[0].description }}</p>
         </div>
       </div>
       <button @click="submit" id="checkout-button">Checkout</button>
@@ -34,28 +34,27 @@ export default {
     publishableKey: process.env.VUE_APP_STRIPE_SECRET_KEY,
     token: null,
     charge: null,
-    products: store.state.products
+    products: store.state.products,
   }),
   computed: {
     product: function() {
       return this.products.filter(
-        item => item.name === this.$route.params.product
+        (item) => item.name === this.$route.params.product
       );
-    }
+    },
   },
   methods: {
     submit() {
-      console.log(baseURL);
       this.createSession();
     },
 
     createSession() {
       axios
         .post(`${baseURL}/pay`, {
-          product: this.product[0]
+          product: this.product[0],
         })
         .then(
-          response => {
+          (response) => {
             console.log(response);
             console.log(response.data.intent);
             this.$store.commit("getItem", this.product[0].name);
@@ -64,15 +63,15 @@ export default {
 
             window.localStorage.setItem("intent", response.data.intent);
             stripe.redirectToCheckout({
-              sessionId: response.data.session_id
+              sessionId: response.data.session_id,
             });
           },
-          error => {
+          (error) => {
             console.log(error.message);
           }
         );
-    }
-  }
+    },
+  },
 };
 </script>
 
