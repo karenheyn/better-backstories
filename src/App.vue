@@ -62,7 +62,7 @@ export default {
   box-sizing: border-box;
 }
 html {
-  min-height: 100vh;
+  height: 100%;
 }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
