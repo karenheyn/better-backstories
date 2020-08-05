@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>SUCCESS!</h1>
-    <h2>Thank you for purchasing {{product}}</h2>
+    <h2>Thank you for purchasing our {{product}}.</h2>
     <h2>Please do not navigate away from the page until you have redeemed your PDF.</h2>
     <button v-if="paid" v-on:click="getSSPDF">Open Single-Sided PDF</button>
     <button v-if="paid" v-on:click="getDSPDF">Open Double-Sided PDF</button>
