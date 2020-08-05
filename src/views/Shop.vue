@@ -15,6 +15,12 @@
         <a href="https://www.redbubble.com/people/AllThatJazmine/shop?asc=u" target="blank">
           <h4>Shop Merch</h4>
         </a>
+        <a
+          href=" https://www.drivethrucards.com/browse/pub/17217/Better-Backstories"
+          target="blank"
+        >
+          <h4>Drive Thru Cards</h4>
+        </a>
       </div>
     </div>
   </div>
@@ -87,6 +93,7 @@ h1 {
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: 300px 300px;
   grid-gap: 50px;
+  grid-row-gap: 100px;
 }
 h2 {
   color: #053475;
@@ -103,9 +110,12 @@ a:hover {
   flex-direction: column;
   justify-content: space-around;
   width: 100%;
-  height: 105%;
+  height: 117%;
   background: #e3dcdc;
   border: 15px solid #d2bf9e;
+}
+.other:hover {
+  background: #ffffff;
 }
 @media only screen and (max-device-width: 1024px) and (min-device-width: 768px) {
   h2 {

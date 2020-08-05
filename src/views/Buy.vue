@@ -122,4 +122,7 @@ p {
 .price {
   margin: 10px;
 }
+button:focus {
+  outline: 0;
+}
 </style>

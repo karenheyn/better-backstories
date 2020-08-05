@@ -1,6 +1,7 @@
 <template>
   <div>
     <h1>SUCCESS!</h1>
+    <h2>Thank you for purchasing {{product}}</h2>
     <h2>Please do not navigate away from the page until you have redeemed your PDF.</h2>
     <button v-if="paid" v-on:click="getSSPDF">Open Single-Sided PDF</button>
     <button v-if="paid" v-on:click="getDSPDF">Open Double-Sided PDF</button>
@@ -10,14 +11,15 @@
 <script>
 import axios from "axios";
 import store from "../store/index.js";
-
+const baseURL = process.env.VUE_APP_BASE_URL;
 export default {
   name: "Success",
   store,
   data() {
     return {
       paid: false,
-      item: store.state.itemPurchased
+      item: store.state.itemPurchased,
+      product: window.localStorage.getItem("product")
     };
   },
   mounted() {
@@ -25,7 +27,7 @@ export default {
     // const product = window.localStorage.getItem(product);
 
     axios
-      .post("http://localhost:5000/pay/confirm", {
+      .post(`${baseURL}/pay/confirm`, {
         intent: intent
       })
       .then(res => {
@@ -50,7 +52,7 @@ export default {
       this.paid = true;
     },
     getBasicDeckSS() {
-      axios("http://localhost:5000/pdf/basicdeckss", {
+      axios(`${baseURL}/pdf/basicdeckss`, {
         method: "GET",
         responseType: "blob" //Force to receive data in a Blob Format
       })
@@ -64,7 +66,7 @@ export default {
         });
     },
     getCardBundleSS() {
-      axios("http://localhost:5000/pdf/cardbundless", {
+      axios(`${baseURL}/pdf/cardbundless`, {
         method: "GET",
         responseType: "blob" //Force to receive data in a Blob Format
       })
@@ -78,7 +80,7 @@ export default {
         });
     },
     getBundleWithBoxSS() {
-      axios("http://localhost:5000/pdf/bundlewithboxss", {
+      axios(`${baseURL}/pdf/bundlewithboxss`, {
         method: "GET",
         responseType: "blob" //Force to receive data in a Blob Format
       })
@@ -92,7 +94,7 @@ export default {
         });
     },
     getTechnicalBoosterSS() {
-      axios("http://localhost:5000/pdf/technicalboosterss", {
+      axios(`${baseURL}/pdf/technicalboosterss`, {
         method: "GET",
         responseType: "blob" //Force to receive data in a Blob Format
       })
@@ -106,7 +108,7 @@ export default {
         });
     },
     getMysticalBoosterSS() {
-      axios("http://localhost:5000/pdf/mysticalboosterss", {
+      axios(`${baseURL}/pdf/mysticalboosterss`, {
         method: "GET",
         responseType: "blob" //Force to receive data in a Blob Format
       })
@@ -121,7 +123,7 @@ export default {
     },
     //double-sided fetch here.
     getBasicDeckDS() {
-      axios("http://localhost:5000/pdf/basicdeckds", {
+      axios(`${baseURL}/pdf/basicdeckds`, {
         method: "GET",
         responseType: "blob" //Force to receive data in a Blob Format
       })
@@ -135,7 +137,7 @@ export default {
         });
     },
     getCardBundleDS() {
-      axios("http://localhost:5000/pdf/cardbundleds", {
+      axios(`${baseURL}/pdf/cardbundleds`, {
         method: "GET",
         responseType: "blob" //Force to receive data in a Blob Format
       })
@@ -149,7 +151,7 @@ export default {
         });
     },
     getBundleWithBoxDS() {
-      axios("http://localhost:5000/pdf/bundlewithboxds", {
+      axios(`${baseURL}/pdf/bundlewithboxds`, {
         method: "GET",
         responseType: "blob" //Force to receive data in a Blob Format
       })
@@ -163,7 +165,7 @@ export default {
         });
     },
     getTechnicalBoosterDS() {
-      axios("http://localhost:5000/pdf/technicalboosterds", {
+      axios(`${baseURL}/pdf/technicalboosterds`, {
         method: "GET",
         responseType: "blob" //Force to receive data in a Blob Format
       })
@@ -177,7 +179,7 @@ export default {
         });
     },
     getMysticalBoosterDS() {
-      axios("http://localhost:5000/pdf/mysticalboosterds", {
+      axios(`${baseURL}/pdf/mysticalboosterds`, {
         method: "GET",
         responseType: "blob" //Force to receive data in a Blob Format
       })
@@ -261,5 +263,8 @@ button {
   border: 1px solid linear-gradient(#ffffff, #000000);
   box-shadow: 0 0 3px #000000;
   margin: 40px auto;
+}
+button:focus {
+  outline: 0;
 }
 </style>

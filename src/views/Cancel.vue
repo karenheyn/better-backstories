@@ -11,8 +11,8 @@ export default {
   methods: {
     goHome() {
       this.$router.push({ path: `/` });
-    },
-  },
+    }
+  }
 };
 </script>
 
@@ -20,5 +20,20 @@ export default {
 h1 {
   font-family: "Oswald", sans-serif;
   color: white;
+}
+button {
+  display: flex;
+  padding: 10px 30px;
+  font-size: 30px;
+  font-family: "IM Fell English", serif;
+  border-radius: 50px;
+  background: #d2bf9e;
+  color: #003b8e;
+  border: 1px solid linear-gradient(#ffffff, #000000);
+  box-shadow: 0 0 3px #000000;
+  margin: 40px auto;
+}
+button:focus {
+  outline: 0;
 }
 </style>

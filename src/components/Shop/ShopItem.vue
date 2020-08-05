@@ -6,6 +6,7 @@
           {{ products.name }}
           <span class="price">${{ products.price }}</span>
         </h2>
+        <h2>(PDF Version)</h2>
         <div class="card-container">
           <img :src="products.image" alt="cards" />
         </div>

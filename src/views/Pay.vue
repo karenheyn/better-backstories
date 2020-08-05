@@ -77,4 +77,7 @@ export default {
   transition: box-shadow 150ms ease;
   margin: 10px;
 }
+button:focus {
+  outline: 0;
+}
 </style>
