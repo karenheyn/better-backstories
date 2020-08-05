@@ -1,7 +1,12 @@
 <template>
   <div id="app">
     <div class="background">
-      <Nav />
+      <MobileNav class="mobile-nav" :class="{ open: showNav }" />
+      <Nav v-if="!mobileView" />
+
+      <div id="navigation-icon" v-if="mobileView" @click="showNav = !showNav">
+        <i class="fas fa-bars"></i>
+      </div>
       <router-view />
       <footer class="footer">
         <ul>
@@ -49,9 +54,25 @@
 </template>
 <script>
 import Nav from "./components/Nav/Nav";
+import MobileNav from "./components/Nav/MobileNav";
 export default {
   components: {
     Nav,
+    MobileNav,
+  },
+  data: () => {
+    return {
+      mobileView: false,
+      showNav: false,
+    };
+  },
+  methods: {
+    handleView() {
+      this.mobileView = window.innerWidth <= 990;
+    },
+  },
+  created() {
+    this.handleView();
   },
 };
 </script>
@@ -86,6 +107,13 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+#navigation-icon {
+  color: #ffffff;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 30px;
+  text-align: right;
 }
 
 .footer {
@@ -124,6 +152,23 @@ footer h4 {
   color: #ffffff;
   font-family: "Oswald", sans-serif;
   font-size: 24px;
+}
+.mobile-nav {
+  position: absolute;
+  z-index: -1;
+}
+.open {
+  position: relative;
+  z-index: 2;
+  animation: slide 1000ms ease-in-out;
+}
+@keyframes slide {
+  0% {
+    top: -500px;
+  }
+  100% {
+    top: 0px;
+  }
 }
 
 @media only screen and (max-width: 980px) {

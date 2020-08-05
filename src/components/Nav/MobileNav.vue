@@ -1,5 +1,5 @@
 <template>
-  <div id="nav">
+  <div id="mobile-nav">
     <div class="header-container">
       <img src="../../assets/Logo.png" alt="logo" />
       <h1>Better Backstories</h1>
@@ -18,18 +18,15 @@
 
 <script>
 export default {
-  name: "Nav",
-  data: () => {
-    return {
-      mobileView: true,
-      showNav: false,
-    };
-  },
+  name: "MobileNav",
 };
 </script>
 
 <style scoped>
-#nav {
+.fa-bars {
+  color: white;
+}
+#mobile-nav {
   /* padding: 30px; */
   display: flex;
   align-items: center;
@@ -38,22 +35,23 @@ export default {
   padding: 0 20px;
 }
 
-#nav .header-container {
+#mobile-nav .header-container {
   display: flex;
   align-items: center;
 }
 
-#nav .nav-links-container {
+#mobile-nav .nav-links-container {
   bottom: 0;
-  /* display: flex;
-  justify-content: space-between; */
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
-#nav h1 {
+#mobile-nav h1 {
   color: #d2bf9e;
   font-family: "Cinzel", serif;
   font-size: 36px;
 }
-#nav a {
+#mobile-nav a {
   font-weight: bold;
   color: #ffffff;
   text-decoration: none;
@@ -62,29 +60,29 @@ export default {
   font-size: 21px;
 }
 
-#nav a.router-link-exact-active {
+#mobile-nav a.router-link-exact-active {
   /* color: #42b983; */
   /* text-decoration: underline #d2bf9e; */
   border-bottom: 2px solid #d2bf9e;
 }
 @media only screen and (max-width: 970px) {
-  #nav h1 {
+  #mobile-nav h1 {
     font-size: 9vw;
   }
-  #nav a {
-    font-size: 15px;
+  #mobile-nav a {
+    font-size: 20px;
     margin: 4px;
   }
 }
 @media only screen and (max-width: 980px) {
-  #nav {
+  #mobile-nav {
     justify-content: center;
     flex-direction: column;
     padding: 0;
   }
 }
 @media only screen and (max-width: 325px) {
-  #nav a {
+  #mobile-nav a {
     font-size: 13.5px;
     margin: 4px;
   }
