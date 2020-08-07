@@ -15,10 +15,7 @@
         >
           <h4>Shop Clothing</h4>
         </a>
-        <a
-          href="https://www.redbubble.com/people/AllThatJazmine/shop?asc=u"
-          target="blank"
-        >
+        <a href="https://www.redbubble.com/people/AllThatJazmine/shop?asc=u" target="blank">
           <h4>Shop Merch</h4>
         </a>
         <a
@@ -47,21 +44,21 @@ export default {
             "The Basic Deck includes 68 cards: 10 cards in each of six categories, three reference cards, five blank cards for developing your own backstory elements, and instructions.",
           image: require("@/assets/Draeorc.png"),
           dtc:
-            "https://www.drivethrucards.com/product/318288/Better-Backstories--Basic-Deck",
+            "https://www.drivethrucards.com/product/318288/Better-Backstories--Basic-Deck"
         },
         {
           name: "Card Bundle",
           price: 10,
           description:
             "The Card Bundle includes the Basic Deck, Technical Booster, Mystical Booster and instructions as a single self-printable PDF.",
-          image: require("@/assets/Twilight.png"),
+          image: require("@/assets/Twilight.png")
         },
         {
           name: "Full Bundle with Box",
           price: 12,
           description:
             "The Full Bundle includes the Basic Deck, Technical Booster, Mystical Booster, instructions and tuck box as a single self-printable PDF.",
-          image: require("@/assets/Orig_Godbringer.png"),
+          image: require("@/assets/Orig_Godbringer.png")
         },
         {
           name: "Technical Booster",
@@ -70,7 +67,7 @@ export default {
             "The Technical Booster includes 10 new cards that focus on sci-fi and hi-tech concepts.  Also includes two blank cards for creating your own backstory elements.",
           image: require("@/assets/Andrea_the_Sharp.png"),
           dtc:
-            "https://www.drivethrucards.com/product/318289/Better-Backstories--Technical-Booster",
+            "https://www.drivethrucards.com/product/318289/Better-Backstories--Technical-Booster"
         },
         {
           name: "Mystical Booster",
@@ -79,11 +76,11 @@ export default {
             "The Mystical Booster includes 10 new cards that focus on magic and fantasy concepts.  Also includes two blank cards for creating your own backstory elements.",
           image: require("@/assets/Akmhenos_Courage.png"),
           dtc:
-            "https://www.drivethrucards.com/product/318291/Better-Backstories--Mystical-Booster",
-        },
-      ],
+            "https://www.drivethrucards.com/product/318291/Better-Backstories--Mystical-Booster"
+        }
+      ]
     };
-  },
+  }
 };
 </script>
 
@@ -129,7 +126,7 @@ a:hover {
 .other:hover {
   background: #ffffff;
 }
-@media only screen and (max-device-width: 1024px) and (min-device-width: 760px) {
+@media only screen and (max-device-width: 1090px) and (min-device-width: 760px) {
   h2 {
     font-size: 1.3rem;
   }
