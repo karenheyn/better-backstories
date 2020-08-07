@@ -126,7 +126,7 @@ a:hover {
 .other:hover {
   background: #ffffff;
 }
-@media only screen and (max-device-width: 1090px) and (min-device-width: 760px) {
+@media only screen and (max-width: 1087px) and (min-device-width: 760px) {
   h2 {
     font-size: 1.3rem;
   }
@@ -134,7 +134,7 @@ a:hover {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media only screen and (max-device-width: 760px) {
+@media only screen and (max-width: 760px) {
   .products {
     grid-template-columns: repeat(1, 1fr);
   }
