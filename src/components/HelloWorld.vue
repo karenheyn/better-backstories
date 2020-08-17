@@ -2,8 +2,8 @@
   <div class="hello">
     <h1>BETTER BACKSTORIES</h1>
     <h2>
-      "We got your
-      <span>back...</span>story"
+      We got your
+      <span>back...</span>story
     </h2>
     <ul>
       <li>
