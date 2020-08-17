@@ -7,12 +7,12 @@
     </h2>
     <ul>
       <li>
-        <a name="instgram" href="https://www.instagram.com/betterbackstories/">
+        <a name="instgram" href="https://www.instagram.com/betterbackstories/" target="blank">
           <i class="fab fa-instagram"></i>
         </a>
       </li>
       <li>
-        <a name="facebook" href="https://www.facebook.com/betterbackstories/">
+        <a name="facebook" href="https://www.facebook.com/betterbackstories/" target="blank">
           <i class="fab fa-facebook-square"></i>
         </a>
       </li>
@@ -20,6 +20,7 @@
         <a
           name="kickstarter"
           href="https://www.kickstarter.com/projects/wordsmythe/better-backstories-for-rpgs"
+          target="blank"
         >
           <i class="fab fa-kickstarter"></i>
         </a>
@@ -28,6 +29,7 @@
         <a
           name="youtube"
           href="https://youtube.com/watch?v=x4Zg--yx3A0&list=PLbldekf_km5Lj62hCFhrX5CDKnYif-57m"
+          target="blank"
         >
           <i class="fab fa-youtube fa-fw"></i>
         </a>
