@@ -7,9 +7,9 @@
     <div class="nav-links-container">
       <router-link to="/">Home</router-link>
       <router-link to="/product">Our Product</router-link>
+      <router-link to="/shop">Shop</router-link>
       <router-link to="/about">About</router-link>
       <router-link to="/contact">Contact</router-link>
-      <router-link to="/shop">Shop</router-link>
       <!-- <router-link to="/login">Login</router-link>
       <router-link to="/register">Sign Up</router-link>-->
     </div>
@@ -22,9 +22,9 @@ export default {
   data: () => {
     return {
       mobileView: true,
-      showNav: false,
+      showNav: false
     };
-  },
+  }
 };
 </script>
 

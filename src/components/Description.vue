@@ -1,6 +1,16 @@
 <template>
   <div class="hello">
     <h1>How It Works</h1>
+    <p class="review">
+      "Better Backstories is a clearly designed, multi-functional tool that you’ll want to keep handy during both character creation and the heat of the game, to supply that little spark of inspiration when you need it."
+      <span>
+        reviewed by:
+        <a
+          href="https://quixotist.wordpress.com/2020/08/13/review-from-a-bricked-up-library-better-backstories/"
+          target="blank"
+        >@The Contemporary Quixotist</a>
+      </span>
+    </p>
     <div class="iframe-outline">
       <div class="iframe-container">
         <iframe
@@ -63,12 +73,27 @@
 export default {
   name: "Description",
   props: {
-    msg: String,
-  },
+    msg: String
+  }
 };
 </script>
 
 <style scoped>
+.review {
+  color: #ffffff;
+  text-align: center;
+}
+span {
+  display: block;
+  text-align: center;
+}
+span a {
+  color: #d2bf9e;
+}
+span a:hover {
+  color: #b8a688;
+  text-decoration: none;
+}
 h1 {
   font-family: "IM Fell English", serif;
   color: #d2bf9e;
@@ -113,7 +138,7 @@ p {
   position: relative;
   float: right;
   height: 400px;
-  bottom: 309px;
+  bottom: 337px;
   clip-path: polygon(40% 0, 98% 0, 100% 100%, 0 100%, 0 51%, 43% 35%);
   shape-outside: polygon(40% 0, 98% 0, 100% 100%, 0 100%, 0 51%, 43% 35%);
   -webkit-shape-outside: polygon(

@@ -2,9 +2,37 @@
   <div class="hello">
     <h1>BETTER BACKSTORIES</h1>
     <h2>
-      Put a little more
-      <span>character</span> in your character
+      "We got your
+      <span>back...</span>story"
     </h2>
+    <ul>
+      <li>
+        <a name="instgram" href="https://www.instagram.com/betterbackstories/">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </li>
+      <li>
+        <a name="facebook" href="https://www.facebook.com/betterbackstories/">
+          <i class="fab fa-facebook-square"></i>
+        </a>
+      </li>
+      <li>
+        <a
+          name="kickstarter"
+          href="https://www.kickstarter.com/projects/wordsmythe/better-backstories-for-rpgs"
+        >
+          <i class="fab fa-kickstarter"></i>
+        </a>
+      </li>
+      <li>
+        <a
+          name="youtube"
+          href="https://youtube.com/watch?v=x4Zg--yx3A0&list=PLbldekf_km5Lj62hCFhrX5CDKnYif-57m"
+        >
+          <i class="fab fa-youtube fa-fw"></i>
+        </a>
+      </li>
+    </ul>
     <img src="../assets/Characters.png" alt="characters" />
     <p>
       Better Backstories is a card-based random life history generator for
@@ -36,6 +64,18 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+ul {
+  display: flex;
+  margin: 40px;
+  font-size: 30px;
+}
+li a {
+  color: #ffffff;
+}
+li a:hover {
+  color: #d2bf9e;
+}
+
 h1 {
   font-family: "IM Fell English", serif;
   color: #d2bf9e;
@@ -104,6 +144,9 @@ img {
 }
 @media only screen and (max-width: 600px) {
   /*mobile*/
+  ul {
+    margin: 30px auto;
+  }
   img {
     position: relative;
     margin: 50px 0 -60px 30px;
