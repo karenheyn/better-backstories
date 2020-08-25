@@ -20,7 +20,7 @@ export default {
   store,
   data() {
     return {
-      paid: false,
+      paid: true,
       item: store.state.itemPurchased,
       product: window.localStorage.getItem("product"),
     };
@@ -62,7 +62,7 @@ export default {
         .then((response) => {
           const file = new Blob([response.data], { type: "application/pdf" });
           const fileURL = URL.createObjectURL(file);
-          window.open(fileURL);
+          window.location.href = fileURL;
         })
         .catch((error) => {
           console.log(error);
@@ -76,7 +76,7 @@ export default {
         .then((response) => {
           const file = new Blob([response.data], { type: "application/pdf" });
           const fileURL = URL.createObjectURL(file);
-          window.open(fileURL);
+          window.location.href = fileURL;
         })
         .catch((error) => {
           console.log(error);
@@ -90,7 +90,7 @@ export default {
         .then((response) => {
           const file = new Blob([response.data], { type: "application/pdf" });
           const fileURL = URL.createObjectURL(file);
-          window.open(fileURL);
+          window.location.href = fileURL;
         })
         .catch((error) => {
           console.log(error);
@@ -104,7 +104,7 @@ export default {
         .then((response) => {
           const file = new Blob([response.data], { type: "application/pdf" });
           const fileURL = URL.createObjectURL(file);
-          window.open(fileURL);
+          window.location.href = fileURL;
         })
         .catch((error) => {
           console.log(error);
@@ -118,7 +118,7 @@ export default {
         .then((response) => {
           const file = new Blob([response.data], { type: "application/pdf" });
           const fileURL = URL.createObjectURL(file);
-          window.open(fileURL);
+          window.location.href = fileURL;
         })
         .catch((error) => {
           console.log(error);
@@ -133,7 +133,7 @@ export default {
         .then((response) => {
           const file = new Blob([response.data], { type: "application/pdf" });
           const fileURL = URL.createObjectURL(file);
-          window.open(fileURL);
+          window.location.href = fileURL;
         })
         .catch((error) => {
           console.log(error);
@@ -147,7 +147,7 @@ export default {
         .then((response) => {
           const file = new Blob([response.data], { type: "application/pdf" });
           const fileURL = URL.createObjectURL(file);
-          window.open(fileURL);
+          window.location.href = fileURL;
         })
         .catch((error) => {
           console.log(error);
@@ -161,7 +161,7 @@ export default {
         .then((response) => {
           const file = new Blob([response.data], { type: "application/pdf" });
           const fileURL = URL.createObjectURL(file);
-          window.open(fileURL);
+          window.location.href = fileURL;
         })
         .catch((error) => {
           console.log(error);
@@ -175,7 +175,7 @@ export default {
         .then((response) => {
           const file = new Blob([response.data], { type: "application/pdf" });
           const fileURL = URL.createObjectURL(file);
-          window.open(fileURL);
+          window.location.href = fileURL;
         })
         .catch((error) => {
           console.log(error);
@@ -189,7 +189,7 @@ export default {
         .then((response) => {
           const file = new Blob([response.data], { type: "application/pdf" });
           const fileURL = URL.createObjectURL(file);
-          window.open(fileURL);
+          window.location.href = fileURL;
         })
         .catch((error) => {
           console.log(error);
